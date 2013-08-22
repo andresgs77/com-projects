@@ -21,8 +21,8 @@ public class Main {
         // Configure Log4J
         PropertyConfigurator.configure(Main.class.getClassLoader().getResource("log4j.properties"));
         OntologyConverter converter = new OntologyConverter();
-        converter.readRelationsandProperties();
         
+        converter.transformToOnto();
         
             
        }

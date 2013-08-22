@@ -8,7 +8,7 @@ package es.upm.atlas;
  *
  * @author hagarcia
  */
-public class OntologyClass {
+public class EntityClass {
     String id;
     String label;
 

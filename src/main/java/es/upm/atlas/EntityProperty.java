@@ -10,16 +10,16 @@ import java.util.ArrayList;
  *
  * @author hagarcia
  */
-public class Property {
+public class EntityProperty {
     String id;
     String label;
     String description;
-    ArrayList<OntologyClass> domainClasses; 
-    ArrayList<OntologyClass> rangeClasses; 
+    ArrayList<EntityClass> domainClasses; 
+    ArrayList<EntityClass> rangeClasses; 
 
-    public Property() {
-        domainClasses = new <OntologyClass>ArrayList();
-        rangeClasses = new <OntologyClass>ArrayList();;
+    public EntityProperty() {
+        domainClasses =  new <EntityClass>ArrayList();
+        rangeClasses =  new <EntityClass>ArrayList();;
     }
 
     public String getId() {
@@ -46,7 +46,7 @@ public class Property {
         this.description = description;
     }
 
-    public ArrayList getDomainClasses() {
+    public ArrayList<EntityClass> getDomainClasses() {
         return domainClasses;
     }
 
@@ -54,7 +54,7 @@ public class Property {
         this.domainClasses = domainClasses;
     }
 
-    public ArrayList getRangeClasses() {
+    public ArrayList<EntityClass> getRangeClasses() {
         return rangeClasses;
     }
 
@@ -67,11 +67,11 @@ public class Property {
     public String toString(){
         String str="Id:"+id+" Label:"+label+" Desc:"+description;
         if (domainClasses!=null)
-            for (OntologyClass domainClass:domainClasses){
+            for (EntityClass domainClass:domainClasses){
                 str += " domainClass={" + domainClass.getId()+","+domainClass.getLabel()+"}";
             }
         if (rangeClasses!=null)
-            for (OntologyClass rangeClass:rangeClasses){
+            for (EntityClass rangeClass:rangeClasses){
                 str += " rangeClass={" + rangeClass.getId()+","+rangeClass.getLabel()+"}";
             }
         return str;
