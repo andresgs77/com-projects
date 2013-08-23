@@ -11,6 +11,7 @@ package es.upm.atlas;
 public class EntityClass {
     String id;
     String label;
+    String description;
 
     public String getId() {
         return id;
@@ -27,5 +28,14 @@ public class EntityClass {
     public void setLabel(String label) {
         this.label = label;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    
     
 }

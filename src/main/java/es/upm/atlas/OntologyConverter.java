@@ -19,6 +19,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 
@@ -30,19 +31,23 @@ public class OntologyConverter {
     
     private static Logger log = Logger.getLogger(OntologyConverter.class);
     ArrayList<EntityProperty> entityProperties = new ArrayList<>();
+    ArrayList<EntityClass> entityClasses = new ArrayList<>();
     String ontologyName;
     String baseUri;
-    String inputFileName;
+    String dataAndObjectPropertyFile;
+    String classFile;
 
     public OntologyConverter() throws Exception {
         Properties prop = new Properties();
         //load a properties file        
         log.info("Reading atlas properties");
     	prop.load(getClass().getClassLoader().getResourceAsStream("atlas.properties"));
-        inputFileName=prop.getProperty("inputFile");
+        dataAndObjectPropertyFile=prop.getProperty("dataAndObjectPropertyFile");
+        classFile=prop.getProperty("classFile");
         baseUri=prop.getProperty("baseURI");
         ontologyName=prop.getProperty("ontologyName");
-        log.info("inputFileName:"+inputFileName);
+        log.info("dataAndObjectPropertyFile:"+dataAndObjectPropertyFile);
+        log.info("classFile:"+classFile);
         log.info("baseUri:"+baseUri);
         log.info("ontologyName:"+ontologyName);
     }                           
@@ -50,7 +55,7 @@ public class OntologyConverter {
     private void readRelationsandProperties() throws UnsupportedEncodingException, IOException{ 
         
         log.info( "Reading relations and property data" );
-        InputStream in = this.getClass().getClassLoader().getResourceAsStream(inputFileName);
+        InputStream in = this.getClass().getClassLoader().getResourceAsStream(dataAndObjectPropertyFile);
         BufferedReader br = new BufferedReader(new InputStreamReader(in, "UTF-8"));
         
         String line;
@@ -112,12 +117,34 @@ public class OntologyConverter {
                           line=line.substring(line.indexOf(";")+1,line.length());                      
                   }                  
               }                            
-              log.info(entityProperty);
+              log.info(entityProperty);              
               entityProperties.add(entityProperty);
               //if (i==2)
               //    break;
               
         }      
+    }
+    
+    private void readClasses() throws Exception{
+        log.info( "Reading classes" );
+        InputStream in = this.getClass().getClassLoader().getResourceAsStream(classFile);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+        
+        String line;
+        int i=0;
+        EntityClass entityClass;
+                
+        log.info( "Starts processing data" );
+        while((line = br.readLine()) != null) {
+            String[] classDescription = line.split(";");
+            log.info( "Class: "+line);
+            entityClass= new EntityClass();                
+            //get the property id
+            entityClass.setId(classDescription[0]);
+            entityClass.setLabel(classDescription[1]);
+            entityClass.setDescription(classDescription[2]);
+            entityClasses.add(entityClass);
+        }
     }
     
     public void transformToOnto() throws Exception{        
@@ -168,9 +195,29 @@ public class OntologyConverter {
                 ontProperty.addRange(ontRangeClass);
             }
             
-        }
+        }    
+        
+        for (EntityClass entityClass:entityClasses){
+            OntClass ontClass=model.getOntClass(baseUri+entityClass.getId());
+            if (ontClass==null){ 
+                ontClass=model.createClass(baseUri+entityClass.getId());
+                ontClass.addLabel(entityClass.getLabel(),"en");
+            }
+            ontClass.addComment(entityClass.getDescription(),"en");
+        }               
+        
+//        Iterator ontClassToPrint=model.listClasses();
+//        System.out.println("total de clases:"+ontClassToPrint);
+//        int i=0;
+//        while (ontClassToPrint.hasNext()){
+//            i++;
+//            OntClass myOntClass=(OntClass)ontClassToPrint.next();
+//            System.out.println(myOntClass);
+//        }
+//        System.out.println("total de clases:"+i);
         
         model.write(System.out, "N3");
+        
         
     }
 }
