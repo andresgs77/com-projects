@@ -1,0 +1,5057 @@
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <http://es.upm.atlas/atlas_ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://es.upm.atlas/atlas_ontology#> .
+
+<http://es.upm.atlas/atlas_ontology#> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ALN--CLIE
+
+base:TXT-ALN--CLIE rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute ALN--CLIE"@en ;
+                   
+                   rdfs:comment "Cliente"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_ALN ;
+                   
+                   rdfs:range base:TYPE-REPO_CLIE .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ALN--CLIE_ENTOR
+
+base:TXT-ALN--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute ALN--CLIE_ENTOR"@en ;
+                         
+                         rdfs:comment "Created: 09/24/2009 19:30:19"@en ;
+                         
+                         rdfs:domain base:TYPE-REPO_ALN ;
+                         
+                         rdfs:range base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ALN--ENTOR
+
+base:TXT-ALN--ENTOR rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute ALN--ENTOR"@en ;
+                    
+                    rdfs:comment "Entorno"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_ALN ;
+                    
+                    rdfs:range base:TYPE-REPO_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ALN--TIMESTAMP
+
+base:TXT-ALN--TIMESTAMP rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute ALN--TIMESTAMP"@en ;
+                        
+                        rdfs:comment "Timestamp"@en ;
+                        
+                        rdfs:domain base:TYPE-REPO_ALN ;
+                        
+                        rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ALP--CLIE
+
+base:TXT-ALP--CLIE rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute ALP--CLIE"@en ;
+                   
+                   rdfs:comment "Cliente"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_ALP ;
+                   
+                   rdfs:range base:TYPE-REPO_CLIE .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ALP--CLIE_ENTOR
+
+base:TXT-ALP--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute ALP--CLIE_ENTOR"@en ;
+                         
+                         rdfs:comment "Created: 09/24/2009 19:32:36"@en ;
+                         
+                         rdfs:domain base:TYPE-REPO_ALP ;
+                         
+                         rdfs:range base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ALP--ENTOR
+
+base:TXT-ALP--ENTOR rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute ALP--ENTOR"@en ;
+                    
+                    rdfs:comment "Entorno"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_ALP ;
+                    
+                    rdfs:range base:TYPE-REPO_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ALP--TIMESTAMP
+
+base:TXT-ALP--TIMESTAMP rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute ALP--TIMESTAMP"@en ;
+                        
+                        rdfs:comment "Timestamp"@en ;
+                        
+                        rdfs:domain base:TYPE-REPO_ALP ;
+                        
+                        rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL---APL
+
+base:TXT-APL---APL rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute APL---APL"@en ;
+                   
+                   rdfs:comment "Created: 01/15/2009 16:03:50"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_ALN ,
+                               base:TYPE-REPO_ALP ,
+                               base:TYPE-REPO_APL2 ;
+                   
+                   rdfs:range base:TYPE-REPO_APLBKS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL---CTX
+
+base:TXT-APL---CTX rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute APL---CTX"@en ;
+                   
+                   rdfs:comment "Created: 04/08/2008 14:18:05"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_ALN ,
+                               base:TYPE-REPO_ALP ,
+                               base:TYPE-REPO_APL2 ;
+                   
+                   rdfs:range base:TYPE-REPO_CTX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL---FACPRI
+
+base:TXT-APL---FACPRI rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute APL---FACPRI"@en ;
+                      
+                      rdfs:comment "Created: 01/15/2009 13:04:34"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_ALN ,
+                                  base:TYPE-REPO_ALP ,
+                                  base:TYPE-REPO_APL2 ;
+                      
+                      rdfs:range base:TYPE-REPO_FACPRI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL---FACPUB
+
+base:TXT-APL---FACPUB rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute APL---FACPUB"@en ;
+                      
+                      rdfs:comment "Created: 04/08/2008 14:17:51"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_ALN ,
+                                  base:TYPE-REPO_ALP ,
+                                  base:TYPE-REPO_APL2 ;
+                      
+                      rdfs:range base:TYPE-REPO_FACPUB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL---OI
+
+base:TXT-APL---OI rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "Link Attribute APL---OI"@en ;
+                  
+                  rdfs:comment "Created: 06/05/2008 13:33:04"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_ALN ,
+                              base:TYPE-REPO_ALP ,
+                              base:TYPE-REPO_APL2 ;
+                  
+                  rdfs:range base:TYPE-REPO_OI ,
+                             base:TYPE-REPO_OPER .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL---OP
+
+base:TXT-APL---OP rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "Link Attribute APL---OP"@en ;
+                  
+                  rdfs:comment "Created: 01/15/2009 13:24:52"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_ALP ,
+                              base:TYPE-REPO_APL2 ;
+                  
+                  rdfs:range base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL2--CLIE
+
+base:TXT-APL2--CLIE rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute APL2--CLIE"@en ;
+                    
+                    rdfs:comment "cliente"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_APL2 ;
+                    
+                    rdfs:range base:TYPE-REPO_CLIE .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL2--CLIE_ENTOR
+
+base:TXT-APL2--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute APL2--CLIE_ENTOR"@en ;
+                          
+                          rdfs:comment "Created: 09/24/2009 19:34:55"@en ;
+                          
+                          rdfs:domain base:TYPE-REPO_APL2 ;
+                          
+                          rdfs:range base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL2--ENTOR
+
+base:TXT-APL2--ENTOR rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "Link Attribute APL2--ENTOR"@en ;
+                     
+                     rdfs:comment "Entorno"@en ;
+                     
+                     rdfs:domain base:TYPE-REPO_APL2 ;
+                     
+                     rdfs:range base:TYPE-REPO_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APL2--TIMESTAMP
+
+base:TXT-APL2--TIMESTAMP rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute APL2--TIMESTAMP"@en ;
+                         
+                         rdfs:comment "Timestamp"@en ;
+                         
+                         rdfs:domain base:TYPE-REPO_APL2 ;
+                         
+                         rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICACION--APLICACION_VERSION
+
+base:TXT-APLICACION--APLICACION_VERSION rdf:type owl:ObjectProperty ;
+                                        
+                                        rdfs:label "Link Attribute APLICACION--APLICACION_VERSION"@en ;
+                                        
+                                        rdfs:comment "Aplicación ->Aplicación versión"@en ;
+                                        
+                                        rdfs:range base:TYPE-AR_APLICACION_VERSION ;
+                                        
+                                        rdfs:domain base:TYPE-REPO_APLINF .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICACION--SUBSISTEMA
+
+base:TXT-APLICACION--SUBSISTEMA rdf:type owl:ObjectProperty ;
+                                
+                                rdfs:label "Link Attribute APLICACION--SUBSISTEMA"@en ;
+                                
+                                rdfs:comment "Created: 05/26/2010 14:42:47"@en ;
+                                
+                                rdfs:domain base:TYPE-REPO_APLINF ;
+                                
+                                rdfs:range base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICACION--ULTIMA_VERSION
+
+base:TXT-APLICACION--ULTIMA_VERSION rdf:type owl:ObjectProperty ;
+                                    
+                                    rdfs:label "Link Attribute APLICACION--ULTIMA_VERSION"@en ;
+                                    
+                                    rdfs:comment "Ultima Versión"@en ;
+                                    
+                                    rdfs:range base:TYPE-AR_APLICACION_VERSION ;
+                                    
+                                    rdfs:domain base:TYPE-REPO_APLINF .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICACION--USUARIO
+
+base:TXT-APLICACION--USUARIO rdf:type owl:ObjectProperty ;
+                             
+                             rdfs:label "Link Attribute APLICACION--USUARIO"@en ;
+                             
+                             rdfs:comment "Usuarios"@en ;
+                             
+                             rdfs:domain base:TYPE-REPO_APLINF ;
+                             
+                             rdfs:range base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF---APLICF_FECHA
+
+base:TXT-APLICF---APLICF_FECHA rdf:type owl:ObjectProperty ;
+                               
+                               rdfs:label "Link Attribute APLICF---APLICF_FECHA"@en ;
+                               
+                               rdfs:comment "Created: 11/19/2008 10:35:12"@en ;
+                               
+                               rdfs:domain base:TYPE-REPO_APLICF ;
+                               
+                               rdfs:range base:TYPE-REPO_APLICF_FECHA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF---APLICF_VERS
+
+base:TXT-APLICF---APLICF_VERS rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute APLICF---APLICF_VERS"@en ;
+                              
+                              rdfs:comment "Created: 11/20/2008 12:39:27"@en ;
+                              
+                              rdfs:domain base:TYPE-REPO_APLICF ;
+                              
+                              rdfs:range base:TYPE-REPO_APLICF_VERS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF---AREA
+
+base:TXT-APLICF---AREA rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "Link Attribute APLICF---AREA"@en ;
+                       
+                       rdfs:comment "Created: 05/04/2009 12:46:04"@en ;
+                       
+                       rdfs:domain base:TYPE-REPO_APLICF ;
+                       
+                       rdfs:range base:TYPE-REPO_AREA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF---USUGEST
+
+base:TXT-APLICF---USUGEST rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute APLICF---USUGEST"@en ;
+                          
+                          rdfs:comment "Created: 12/03/2008 17:34:46"@en ;
+                          
+                          rdfs:domain base:TYPE-REPO_APLICF ;
+                          
+                          rdfs:range base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF---USUINTEG
+
+base:TXT-APLICF---USUINTEG rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute APLICF---USUINTEG"@en ;
+                           
+                           rdfs:comment "Integrador"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_APLICF ;
+                           
+                           rdfs:range base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF---USURESP
+
+base:TXT-APLICF---USURESP rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute APLICF---USURESP"@en ;
+                          
+                          rdfs:comment "Usuario Responsable"@en ;
+                          
+                          rdfs:domain base:TYPE-REPO_APLICF ;
+                          
+                          rdfs:range base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF--SERVICIO_VER
+
+base:TXT-APLICF--SERVICIO_VER rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute APLICF--SERVICIO_VER"@en ;
+                              
+                              rdfs:comment "Servicio Versión"@en ;
+                              
+                              rdfs:range base:TYPE-AR_SERVICIO_VERSION ;
+                              
+                              rdfs:domain base:TYPE-REPO_APLICF .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_FECHA--ALP
+
+base:TXT-APLICF_FECHA--ALP rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute APLICF_FECHA--ALP"@en ;
+                           
+                           rdfs:comment "Aplicacion Logica de Negocio"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_ALP ;
+                           
+                           rdfs:domain base:TYPE-REPO_APLICF_FECHA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_FECHA--FACPRI
+
+base:TXT-APLICF_FECHA--FACPRI rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute APLICF_FECHA--FACPRI"@en ;
+                              
+                              rdfs:comment "Fachadas Protegidas"@en ;
+                              
+                              rdfs:domain base:TYPE-REPO_APLICF_FECHA ;
+                              
+                              rdfs:range base:TYPE-REPO_FACPRI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_FECHA--FACPUB
+
+base:TXT-APLICF_FECHA--FACPUB rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute APLICF_FECHA--FACPUB"@en ;
+                              
+                              rdfs:comment "Fachada Publica"@en ;
+                              
+                              rdfs:domain base:TYPE-REPO_APLICF_FECHA ;
+                              
+                              rdfs:range base:TYPE-REPO_FACPUB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_FECHA--OP
+
+base:TXT-APLICF_FECHA--OP rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute APLICF_FECHA--OP"@en ;
+                          
+                          rdfs:comment "OP"@en ;
+                          
+                          rdfs:domain base:TYPE-REPO_APLICF_FECHA ;
+                          
+                          rdfs:range base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS---APLICF_FECHA
+
+base:TXT-APLICF_VERS---APLICF_FECHA rdf:type owl:ObjectProperty ;
+                                    
+                                    rdfs:label "Link Attribute APLICF_VERS---APLICF_FECHA"@en ;
+                                    
+                                    rdfs:comment "Created: 11/20/2008 15:35:56"@en ;
+                                    
+                                    rdfs:range base:TYPE-REPO_APLICF_FECHA ;
+                                    
+                                    rdfs:domain base:TYPE-REPO_APLICF_VERS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS---CLIE
+
+base:TXT-APLICF_VERS---CLIE rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute APLICF_VERS---CLIE"@en ;
+                            
+                            rdfs:comment "Cliente Proceso obsoleto"@en ;
+                            
+                            rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                            
+                            rdfs:range base:TYPE-REPO_CLIE .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS---CLIE_FECHA_ENV
+
+base:TXT-APLICF_VERS---CLIE_FECHA_ENV rdf:type owl:ObjectProperty ;
+                                      
+                                      rdfs:label "Link Attribute APLICF_VERS---CLIE_FECHA_ENV"@en ;
+                                      
+                                      rdfs:comment "Fecha Envio"@en ;
+                                      
+                                      rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                                      
+                                      rdfs:range base:TYPE-REPO_CLIE_FECHA_ENV .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS---ENS
+
+base:TXT-APLICF_VERS---ENS rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute APLICF_VERS---ENS"@en ;
+                           
+                           rdfs:comment "Created: 11/20/2008 15:36:17"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                           
+                           rdfs:range base:TYPE-REPO_ENS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS---ESC
+
+base:TXT-APLICF_VERS---ESC rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute APLICF_VERS---ESC"@en ;
+                           
+                           rdfs:comment "Created: 11/20/2008 15:36:26"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                           
+                           rdfs:range base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS---MOD
+
+base:TXT-APLICF_VERS---MOD rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute APLICF_VERS---MOD"@en ;
+                           
+                           rdfs:comment "Created: 11/20/2008 15:36:38"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                           
+                           rdfs:range base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS---PREENS
+
+base:TXT-APLICF_VERS---PREENS rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute APLICF_VERS---PREENS"@en ;
+                              
+                              rdfs:comment "Created: 03/09/2009 11:33:15"@en ;
+                              
+                              rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                              
+                              rdfs:range base:TYPE-REPO_PREENS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS---PROY
+
+base:TXT-APLICF_VERS---PROY rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute APLICF_VERS---PROY"@en ;
+                            
+                            rdfs:comment "Created: 11/20/2008 15:36:48"@en ;
+                            
+                            rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                            
+                            rdfs:range base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--ALP
+
+base:TXT-APLICF_VERS--ALP rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute APLICF_VERS--ALP"@en ;
+                          
+                          rdfs:comment "Aplicación Logica de Presentación"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_ALP ;
+                          
+                          rdfs:domain base:TYPE-REPO_APLICF_VERS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--APLICF_VERS
+
+base:TXT-APLICF_VERS--APLICF_VERS rdf:type owl:ObjectProperty ;
+                                  
+                                  rdfs:label "Link Attribute APLICF_VERS--APLICF_VERS"@en ;
+                                  
+                                  rdfs:comment "Psf original"@en ;
+                                  
+                                  rdfs:range base:TYPE-REPO_APLICF_VERS ;
+                                  
+                                  rdfs:domain base:TYPE-REPO_APLICF_VERS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--APLICF_VERS_CORE
+
+base:TXT-APLICF_VERS--APLICF_VERS_CORE rdf:type owl:ObjectProperty ;
+                                       
+                                       rdfs:label "Link Attribute APLICF_VERS--APLICF_VERS_CORE"@en ;
+                                       
+                                       rdfs:comment "Aplicaciones Consumidas"@en ;
+                                       
+                                       rdfs:range base:TYPE-REPO_APLICF_VERS ;
+                                       
+                                       rdfs:domain base:TYPE-REPO_APLICF_VERS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--CLIE
+
+base:TXT-APLICF_VERS--CLIE rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute APLICF_VERS--CLIE"@en ;
+                           
+                           rdfs:comment "Cliente"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                           
+                           rdfs:range base:TYPE-REPO_CLIE .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--CLIE_ENTOR
+
+base:TXT-APLICF_VERS--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                                 
+                                 rdfs:label "Link Attribute APLICF_VERS--CLIE_ENTOR"@en ;
+                                 
+                                 rdfs:comment "Cliente Entorno"@en ;
+                                 
+                                 rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                                 
+                                 rdfs:range base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--ENTOR
+
+base:TXT-APLICF_VERS--ENTOR rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute APLICF_VERS--ENTOR"@en ;
+                            
+                            rdfs:comment "Entorno"@en ;
+                            
+                            rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                            
+                            rdfs:range base:TYPE-REPO_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--FACPRI
+
+base:TXT-APLICF_VERS--FACPRI rdf:type owl:ObjectProperty ;
+                             
+                             rdfs:label "Link Attribute APLICF_VERS--FACPRI"@en ;
+                             
+                             rdfs:comment "Fachada Protegida"@en ;
+                             
+                             rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                             
+                             rdfs:range base:TYPE-REPO_FACPRI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--FACPUB
+
+base:TXT-APLICF_VERS--FACPUB rdf:type owl:ObjectProperty ;
+                             
+                             rdfs:label "Link Attribute APLICF_VERS--FACPUB"@en ;
+                             
+                             rdfs:comment "Fachada Publica"@en ;
+                             
+                             rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                             
+                             rdfs:range base:TYPE-REPO_FACPUB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLICF_VERS--TIMESTAMP
+
+base:TXT-APLICF_VERS--TIMESTAMP rdf:type owl:ObjectProperty ;
+                                
+                                rdfs:label "Link Attribute APLICF_VERS--TIMESTAMP"@en ;
+                                
+                                rdfs:comment "Timestamp"@en ;
+                                
+                                rdfs:domain base:TYPE-REPO_APLICF_VERS ;
+                                
+                                rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLIC_FECHA---APLICF
+
+base:TXT-APLIC_FECHA---APLICF rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute APLIC_FECHA---APLICF"@en ;
+                              
+                              rdfs:comment "Created: 12/18/2008 16:09:23"@en ;
+                              
+                              rdfs:range base:TYPE-REPO_APLICF ;
+                              
+                              rdfs:domain base:TYPE-REPO_APLICF_FECHA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLIC_FECHA---METHIFAC
+
+base:TXT-APLIC_FECHA---METHIFAC rdf:type owl:ObjectProperty ;
+                                
+                                rdfs:label "Link Attribute APLIC_FECHA---METHIFAC"@en ;
+                                
+                                rdfs:comment "Created: 02/05/2009 14:43:47"@en ;
+                                
+                                rdfs:domain base:TYPE-REPO_APLICF_FECHA ;
+                                
+                                rdfs:range base:TYPE-REPO_METHIFAC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLIC_FECHA---MOD
+
+base:TXT-APLIC_FECHA---MOD rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute APLIC_FECHA---MOD"@en ;
+                           
+                           rdfs:comment "Relacion con Modulos"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_APLICF_FECHA ;
+                           
+                           rdfs:range base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-APLINF---DEFAPL
+
+base:TXT-APLINF---DEFAPL rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute APLINF---DEFAPL"@en ;
+                         
+                         rdfs:comment "Relacion con Definicion de Aplicacion"@en ;
+                         
+                         rdfs:domain base:TYPE-REPO_APLINF ;
+                         
+                         rdfs:range base:TYPE-REPO_DEFAPL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-AREA--CAPA
+
+base:TXT-AREA--CAPA rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute AREA--CAPA"@en ;
+                    
+                    rdfs:comment "Capa"@en ;
+                    
+                    rdfs:range base:TYPE-AR_CAPA ;
+                    
+                    rdfs:domain base:TYPE-REPO_AREA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLIE---CLIE_ENTOR
+
+base:TXT-CLIE---CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute CLIE---CLIE_ENTOR"@en ;
+                           
+                           rdfs:comment "Created: 06/03/2008 13:07:52"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_CLIE ;
+                           
+                           rdfs:range base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLIE--CLIE_LIN
+
+base:TXT-CLIE--CLIE_LIN rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute CLIE--CLIE_LIN"@en ;
+                        
+                        rdfs:comment "Created: 09/01/2009 16:51:41"@en ;
+                        
+                        rdfs:range base:TYPE-H_REPO_CLIE_LIN ;
+                        
+                        rdfs:domain base:TYPE-REPO_CLIE .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLIE_ENTOR---CLIE_LIN_ENTOR
+
+base:TXT-CLIE_ENTOR---CLIE_LIN_ENTOR rdf:type owl:ObjectProperty ;
+                                     
+                                     rdfs:label "Link Attribute CLIE_ENTOR---CLIE_LIN_ENTOR"@en ;
+                                     
+                                     rdfs:comment "Cliente - Linea - Entorno"@en ;
+                                     
+                                     rdfs:range base:TYPE-H_REPO_CLIE_LIN_ENTOR ;
+                                     
+                                     rdfs:domain base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLIE_ENTOR---ENTOR
+
+base:TXT-CLIE_ENTOR---ENTOR rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute CLIE_ENTOR---ENTOR"@en ;
+                            
+                            rdfs:comment "Created: 06/03/2008 13:05:39"@en ;
+                            
+                            rdfs:domain base:TYPE-REPO_CLIE_ENTOR ;
+                            
+                            rdfs:range base:TYPE-REPO_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLIE_ENTOR--APLICACION_VERSION
+
+base:TXT-CLIE_ENTOR--APLICACION_VERSION rdf:type owl:ObjectProperty ;
+                                        
+                                        rdfs:label "Link Attribute CLIE_ENTOR--APLICACION_VERSION"@en ;
+                                        
+                                        rdfs:comment "Aplicación Versión"@en ;
+                                        
+                                        rdfs:range base:TYPE-AR_APLICACION_VERSION ;
+                                        
+                                        rdfs:domain base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLIE_ENTOR--CLIE
+
+base:TXT-CLIE_ENTOR--CLIE rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute CLIE_ENTOR--CLIE</h3></a>p><pre>Created: 09/02/2009 10:26:22"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_CLIE ;
+                          
+                          rdfs:domain base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLIE_ENTOR--SERVICIO_VER
+
+base:TXT-CLIE_ENTOR--SERVICIO_VER rdf:type owl:ObjectProperty ;
+                                  
+                                  rdfs:label "Link Attribute CLIE_ENTOR--SERVICIO_VER"@en ;
+                                  
+                                  rdfs:comment "Servicio Versión"@en ;
+                                  
+                                  rdfs:range base:TYPE-AR_SERVICIO_VERSION ;
+                                  
+                                  rdfs:domain base:TYPE-REPO_CLIE_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP---CLIE
+
+base:TXT-COMP---CLIE rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "Link Attribute COMP---CLIE"@en ;
+                     
+                     rdfs:comment "Created: 06/03/2008 14:03:37"@en ;
+                     
+                     rdfs:range base:TYPE-REPO_CLIE ;
+                     
+                     rdfs:domain base:TYPE-REPO_COMP_ADAP ,
+                                 base:TYPE-REPO_COMP_JAVA ,
+                                 base:TYPE-REPO_COMP_SQL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP---CLIE_ENTOR
+
+base:TXT-COMP---CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute COMP---CLIE_ENTOR"@en ;
+                           
+                           rdfs:comment "Created: 06/03/2008 14:03:47"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                           
+                           rdfs:domain base:TYPE-REPO_COMP_ADAP ,
+                                       base:TYPE-REPO_COMP_JAVA ,
+                                       base:TYPE-REPO_COMP_SQL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP---DIFAC
+
+base:TXT-COMP---DIFAC rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute COMP---DIFAC"@en ;
+                      
+                      rdfs:comment "Created: 04/08/2008 14:23:44"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_COMP_ADAP ,
+                                  base:TYPE-REPO_COMP_JAVA ,
+                                  base:TYPE-REPO_COMP_SQL ;
+                      
+                      rdfs:range base:TYPE-REPO_DIFAC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP---ENTOR
+
+base:TXT-COMP---ENTOR rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute COMP---ENTOR"@en ;
+                      
+                      rdfs:comment "Created: 04/08/2008 14:24:16"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_COMP_ADAP ,
+                                  base:TYPE-REPO_COMP_JAVA ,
+                                  base:TYPE-REPO_COMP_SQL ;
+                      
+                      rdfs:range base:TYPE-REPO_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP---PARAM
+
+base:TXT-COMP---PARAM rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute COMP---PARAM"@en ;
+                      
+                      rdfs:comment "Created: 04/08/2008 14:23:32"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_COMP_ADAP ,
+                                  base:TYPE-REPO_COMP_JAVA ,
+                                  base:TYPE-REPO_COMP_SQL ;
+                      
+                      rdfs:range base:TYPE-REPO_PARAM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP--SQL
+
+base:TXT-COMP--SQL rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute COMP--SQL"@en ;
+                   
+                   rdfs:comment "Consultas"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_COMP_SQL ;
+                   
+                   rdfs:range base:TYPE-REPO_SQL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMPOS---TDC
+
+base:TXT-COMPOS---TDC rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute COMPOS---TDC"@en ;
+                      
+                      rdfs:comment "Created: 12/11/2008 14:00:47"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_COMPOS ;
+                      
+                      rdfs:range base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMPOS---TIPDML
+
+base:TXT-COMPOS---TIPDML rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute COMPOS---TIPDML"@en ;
+                         
+                         rdfs:comment "Created: 12/11/2008 14:01:22"@en ;
+                         
+                         rdfs:domain base:TYPE-REPO_COMPOS ;
+                         
+                         rdfs:range base:TYPE-REPO_TIPDML .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP_ADAP--LOC
+
+base:TXT-COMP_ADAP--LOC rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute COMP_ADAP--LOC"@en ;
+                        
+                        rdfs:comment "Localizador"@en ;
+                        
+                        rdfs:range base:TYPE-H_REPO_LOC ;
+                        
+                        rdfs:domain base:TYPE-REPO_COMP_ADAP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP_JAVA--LOC
+
+base:TXT-COMP_JAVA--LOC rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute COMP_JAVA--LOC"@en ;
+                        
+                        rdfs:comment "Localizador"@en ;
+                        
+                        rdfs:range base:TYPE-H_REPO_LOC ;
+                        
+                        rdfs:domain base:TYPE-REPO_COMP_JAVA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-COMP_SQL--LOC
+
+base:TXT-COMP_SQL--LOC rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "Link Attribute COMP_SQL--LOC"@en ;
+                       
+                       rdfs:comment "Localizador"@en ;
+                       
+                       rdfs:range base:TYPE-H_REPO_LOC ;
+                       
+                       rdfs:domain base:TYPE-REPO_COMP_SQL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CONCEP_MULTI---TDC
+
+base:TXT-CONCEP_MULTI---TDC rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute CONCEP_MULTI---TDC"@en ;
+                            
+                            rdfs:comment "Created: 12/15/2008 12:35:41"@en ;
+                            
+                            rdfs:domain base:TYPE-REPO_CONCEP_MULTI ;
+                            
+                            rdfs:range base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CONCEP_MULTI---TIPDML
+
+base:TXT-CONCEP_MULTI---TIPDML rdf:type owl:ObjectProperty ;
+                               
+                               rdfs:label "Link Attribute CONCEP_MULTI---TIPDML"@en ;
+                               
+                               rdfs:comment "Created: 12/11/2008 13:55:10"@en ;
+                               
+                               rdfs:domain base:TYPE-REPO_CONCEP_MULTI ;
+                               
+                               rdfs:range base:TYPE-REPO_TIPDML .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CONTEX--CB
+
+base:TXT-CONTEX--CB rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute CONTEX--CB"@en ;
+                    
+                    rdfs:comment "ContexBean"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_CB ;
+                    
+                    rdfs:domain base:TYPE-REPO_CONTEX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CONTEX--TIPD
+
+base:TXT-CONTEX--TIPD rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute CONTEX--TIPD"@en ;
+                      
+                      rdfs:comment "Tipo de Dato"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_CONTEX ;
+                      
+                      rdfs:range base:TYPE-REPO_TIPD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DALN---ALN
+
+base:TXT-DALN---ALN rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute DALN---ALN"@en ;
+                    
+                    rdfs:comment "Created: 02/02/2009 09:29:22"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_ALN ;
+                    
+                    rdfs:domain base:TYPE-REPO_DALN .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DALP---ALP
+
+base:TXT-DALP---ALP rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute DALP---ALP"@en ;
+                    
+                    rdfs:comment "Created: 02/02/2009 09:28:34"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_ALP ;
+                    
+                    rdfs:domain base:TYPE-REPO_DALP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DAPL2---APL2
+
+base:TXT-DAPL2---APL2 rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute DAPL2---APL2"@en ;
+                      
+                      rdfs:comment "Created: 01/15/2009 18:42:39"@en ;
+                      
+                      rdfs:range base:TYPE-REPO_APL2 ;
+                      
+                      rdfs:domain base:TYPE-REPO_DAPL2 .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DCOMP_ADAP---COMP
+
+base:TXT-DCOMP_ADAP---COMP rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute DCOMP_ADAP---COMP"@en ;
+                           
+                           rdfs:comment "Created: 12/02/2008 13:39:11"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_COMP_ADAP ;
+                           
+                           rdfs:domain base:TYPE-REPO_DCOMP_ADAP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DCOMP_JAVA---COMP
+
+base:TXT-DCOMP_JAVA---COMP rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute DCOMP_JAVA---COMP"@en ;
+                           
+                           rdfs:comment "Created: 12/03/2008 18:27:35"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_COMP_JAVA ;
+                           
+                           rdfs:domain base:TYPE-REPO_DCOMP_JAVA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DCOMP_SQL---COMP
+
+base:TXT-DCOMP_SQL---COMP rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute DCOMP_SQL---COMP"@en ;
+                          
+                          rdfs:comment "Created: 12/02/2008 13:40:33"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_COMP_SQL ;
+                          
+                          rdfs:domain base:TYPE-REPO_DCOMP_SQL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DENS---ENS
+
+base:TXT-DENS---ENS rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute DENS---ENS"@en ;
+                    
+                    rdfs:comment "Created: 12/02/2008 13:41:01"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_DENS ;
+                    
+                    rdfs:range base:TYPE-REPO_ENS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESC---ESC
+
+base:TXT-DESC---ESC rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute DESC---ESC"@en ;
+                    
+                    rdfs:comment "Created: 12/02/2008 13:41:28"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_DESC ;
+                    
+                    rdfs:range base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DFAC_PRI---FACPRI
+
+base:TXT-DFAC_PRI---FACPRI rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute DFAC_PRI---FACPRI"@en ;
+                           
+                           rdfs:comment "Created: 12/02/2008 13:42:10"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_DFAC_PRI ;
+                           
+                           rdfs:range base:TYPE-REPO_FACPRI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DFAC_PUB---FACPUB
+
+base:TXT-DFAC_PUB---FACPUB rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute DFAC_PUB---FACPUB"@en ;
+                           
+                           rdfs:comment "Created: 12/02/2008 13:42:43"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_DFAC_PUB ;
+                           
+                           rdfs:range base:TYPE-REPO_FACPUB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DIFAC---IFAC
+
+base:TXT-DIFAC---IFAC rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute DIFAC---IFAC"@en ;
+                      
+                      rdfs:comment "Created: 12/02/2008 13:43:13"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_DIFAC ;
+                      
+                      rdfs:range base:TYPE-REPO_IFAC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DMLN---MOD
+
+base:TXT-DMLN---MOD rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute DMLN---MOD"@en ;
+                    
+                    rdfs:comment "Created: 12/22/2008 12:23:09"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_DMLN ;
+                    
+                    rdfs:range base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DMLP---MOD2
+
+base:TXT-DMLP---MOD2 rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "Link Attribute DMLP---MOD2"@en ;
+                     
+                     rdfs:comment "Created: 02/02/2009 09:35:32"@en ;
+                     
+                     rdfs:domain base:TYPE-REPO_DMLP ;
+                     
+                     rdfs:range base:TYPE-REPO_MOD2 .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DOPER---OI
+
+base:TXT-DOPER---OI rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute DOPER---OI"@en ;
+                    
+                    rdfs:comment "Created: 02/18/2009 11:10:16"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_DOPER ;
+                    
+                    rdfs:range base:TYPE-REPO_OI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DOPER---OP
+
+base:TXT-DOPER---OP rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute DOPER---OP"@en ;
+                    
+                    rdfs:comment "Created: 02/18/2009 11:10:26"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_DOPER ;
+                    
+                    rdfs:range base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DPROY---PROY
+
+base:TXT-DPROY---PROY rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute DPROY---PROY"@en ;
+                      
+                      rdfs:comment "Created: 12/02/2008 13:44:57"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_DPROY ;
+                      
+                      rdfs:range base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DWEB---WEB
+
+base:TXT-DWEB---WEB rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute DWEB---WEB"@en ;
+                    
+                    rdfs:comment "Created: 12/02/2008 13:45:33"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_DWEB ;
+                    
+                    rdfs:range base:TYPE-REPO_WEB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---CLIE
+
+base:TXT-ENS---CLIE rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute ENS---CLIE"@en ;
+                    
+                    rdfs:comment "Created: 01/20/2009 13:33:18"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_CLIE ;
+                    
+                    rdfs:domain base:TYPE-REPO_ENS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---CLIE_ENTOR
+
+base:TXT-ENS---CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute ENS---CLIE_ENTOR"@en ;
+                          
+                          rdfs:comment "Created: 01/20/2009 13:33:27"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                          
+                          rdfs:domain base:TYPE-REPO_ENS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---ENS_METH
+
+base:TXT-ENS---ENS_METH rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute ENS---ENS_METH"@en ;
+                        
+                        rdfs:comment "Created: 09/04/2008 15:32:25"@en ;
+                        
+                        rdfs:domain base:TYPE-REPO_ENS ;
+                        
+                        rdfs:range base:TYPE-REPO_ENS_METH .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---ENTOR
+
+base:TXT-ENS---ENTOR rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "Link Attribute ENS---ENTOR"@en ;
+                     
+                     rdfs:comment "Created: 01/20/2009 13:33:37"@en ;
+                     
+                     rdfs:domain base:TYPE-REPO_ENS ;
+                     
+                     rdfs:range base:TYPE-REPO_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---MOD
+
+base:TXT-ENS---MOD rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute ENS---MOD"@en ;
+                   
+                   rdfs:comment "Created: 09/02/2008 16:53:47"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_ENS ;
+                   
+                   rdfs:range base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---MOD2
+
+base:TXT-ENS---MOD2 rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute ENS---MOD2"@en ;
+                    
+                    rdfs:comment "Created: 01/14/2009 18:32:17"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_ENS ;
+                    
+                    rdfs:range base:TYPE-REPO_MOD2 .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---PREENS
+
+base:TXT-ENS---PREENS rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute ENS---PREENS"@en ;
+                      
+                      rdfs:comment "Created: 06/13/2008 11:27:42"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_ENS ;
+                      
+                      rdfs:range base:TYPE-REPO_PREENS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---TIMESTAMP
+
+base:TXT-ENS---TIMESTAMP rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute ENS---TIMESTAMP"@en ;
+                         
+                         rdfs:comment "Created: 01/20/2009 13:33:50"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST ;
+                         
+                         rdfs:domain base:TYPE-REPO_ENS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENS---WEB
+
+base:TXT-ENS---WEB rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute ENS---WEB"@en ;
+                   
+                   rdfs:comment "Created: 06/13/2008 11:27:29"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_ENS ;
+                   
+                   rdfs:range base:TYPE-REPO_WEB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC---ALN
+
+base:TXT-ESC---ALN rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute ESC---ALN"@en ;
+                   
+                   rdfs:comment "Created: 01/16/2009 12:18:08"@en ;
+                   
+                   rdfs:range base:TYPE-REPO_ALN ;
+                   
+                   rdfs:domain base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC---ALP
+
+base:TXT-ESC---ALP rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute ESC---ALP"@en ;
+                   
+                   rdfs:comment "Created: 01/16/2009 12:18:14"@en ;
+                   
+                   rdfs:range base:TYPE-REPO_ALP ;
+                   
+                   rdfs:domain base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC---APL2
+
+base:TXT-ESC---APL2 rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute ESC---APL2"@en ;
+                    
+                    rdfs:comment "Created: 01/16/2009 12:18:24"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_APL2 ;
+                    
+                    rdfs:domain base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC---CTX
+
+base:TXT-ESC---CTX rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute ESC---CTX"@en ;
+                   
+                   rdfs:comment "Created: 02/02/2009 09:43:57"@en ;
+                   
+                   rdfs:range base:TYPE-REPO_CTX ;
+                   
+                   rdfs:domain base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC---OI
+
+base:TXT-ESC---OI rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "Link Attribute ESC---OI"@en ;
+                  
+                  rdfs:comment "Created: 01/16/2009 12:17:52"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_ESC ;
+                  
+                  rdfs:range base:TYPE-REPO_OI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC---OP
+
+base:TXT-ESC---OP rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "Link Attribute ESC---OP"@en ;
+                  
+                  rdfs:comment "Created: 01/16/2009 12:18:00"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_ESC ;
+                  
+                  rdfs:range base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC--CLIE
+
+base:TXT-ESC--CLIE rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute ESC--CLIE"@en ;
+                   
+                   rdfs:comment "Cliente"@en ;
+                   
+                   rdfs:range base:TYPE-REPO_CLIE ;
+                   
+                   rdfs:domain base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC--CLIE_ENTOR
+
+base:TXT-ESC--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute ESC--CLIE_ENTOR"@en ;
+                         
+                         rdfs:comment "Cliente Entorno"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                         
+                         rdfs:domain base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC--ENTOR
+
+base:TXT-ESC--ENTOR rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute ESC--ENTOR"@en ;
+                    
+                    rdfs:comment "Entorno"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_ENTOR ;
+                    
+                    rdfs:domain base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESC--TIMESTAMP
+
+base:TXT-ESC--TIMESTAMP rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute ESC--TIMESTAMP"@en ;
+                        
+                        rdfs:comment "Timestamp"@en ;
+                        
+                        rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST ;
+                        
+                        rdfs:domain base:TYPE-REPO_ESC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_OI---DALN
+
+base:TXT-ESTADO_OI---DALN rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute ESTADO_OI---DALN"@en ;
+                          
+                          rdfs:comment "Created: 10/17/2008 17:02:27"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_DALN ;
+                          
+                          rdfs:domain base:TYPE-REPO_ESTADO_OI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_OI---DALP
+
+base:TXT-ESTADO_OI---DALP rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute ESTADO_OI---DALP"@en ;
+                          
+                          rdfs:comment "Created: 01/16/2009 10:15:03"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_DALP ;
+                          
+                          rdfs:domain base:TYPE-REPO_ESTADO_OI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_OI---DAPL2
+
+base:TXT-ESTADO_OI---DAPL2 rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute ESTADO_OI---DAPL2"@en ;
+                           
+                           rdfs:comment "Created: 01/16/2009 10:15:15"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_DAPL2 ;
+                           
+                           rdfs:domain base:TYPE-REPO_ESTADO_OI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_OI---DOPER
+
+base:TXT-ESTADO_OI---DOPER rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute ESTADO_OI---DOPER"@en ;
+                           
+                           rdfs:comment "Created: 10/17/2008 17:02:17"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_DOPER ;
+                           
+                           rdfs:domain base:TYPE-REPO_ESTADO_OI ;
+                           
+                           rdfs:range base:TYPE-REPO_OPER .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_OP---DALN
+
+base:TXT-ESTADO_OP---DALN rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute ESTADO_OP---DALN"@en ;
+                          
+                          rdfs:comment "Created: 10/17/2008 17:03:21"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_DALN ;
+                          
+                          rdfs:domain base:TYPE-REPO_ESTADO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_OP---DALP
+
+base:TXT-ESTADO_OP---DALP rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute ESTADO_OP---DALP"@en ;
+                          
+                          rdfs:comment "Created: 01/16/2009 10:17:23"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_DALP ;
+                          
+                          rdfs:domain base:TYPE-REPO_ESTADO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_OP---DAPL2
+
+base:TXT-ESTADO_OP---DAPL2 rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute ESTADO_OP---DAPL2"@en ;
+                           
+                           rdfs:comment "Created: 01/16/2009 10:17:34"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_DAPL2 ;
+                           
+                           rdfs:domain base:TYPE-REPO_ESTADO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_OP---DOPER
+
+base:TXT-ESTADO_OP---DOPER rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute ESTADO_OP---DOPER"@en ;
+                           
+                           rdfs:comment "Created: 10/17/2008 17:03:12"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_DOPER ;
+                           
+                           rdfs:domain base:TYPE-REPO_ESTADO_OP ;
+                           
+                           rdfs:range base:TYPE-REPO_OPER .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_SAT--DMSJ
+
+base:TXT-ESTADO_SAT--DMSJ rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute ESTADO_SAT--DMSJ"@en ;
+                          
+                          rdfs:comment "Created: 09/21/2009 15:21:40"@en ;
+                          
+                          rdfs:range base:TYPE-H_REPO_DMSJ ;
+                          
+                          rdfs:domain base:TYPE-REPO_ESTADO_SAT .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_SAT--MTJ
+
+base:TXT-ESTADO_SAT--MTJ rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute ESTADO_SAT--MTJ"@en ;
+                         
+                         rdfs:comment "Created: 09/18/2009 18:12:37"@en ;
+                         
+                         rdfs:range base:TYPE-H_REPO_MTJ ;
+                         
+                         rdfs:domain base:TYPE-REPO_ESTADO_SAT .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_TRXO--DTRX
+
+base:TXT-ESTADO_TRXO--DTRX rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute ESTADO_TRXO--DTRX"@en ;
+                           
+                           rdfs:comment "Created: 09/21/2009 15:20:14"@en ;
+                           
+                           rdfs:range base:TYPE-H_REPO_DTRX ;
+                           
+                           rdfs:domain base:TYPE-REPO_ESTADO_TRXO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_TRXO--MTI
+
+base:TXT-ESTADO_TRXO--MTI rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute ESTADO_TRXO--MTI"@en ;
+                          
+                          rdfs:comment "Created: 09/18/2009 18:17:19"@en ;
+                          
+                          rdfs:range base:TYPE-H_REPO_MTI ;
+                          
+                          rdfs:domain base:TYPE-REPO_ESTADO_TRXO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_WEB---ALIAS
+
+base:TXT-ESTADO_WEB---ALIAS rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute ESTADO_WEB---ALIAS"@en ;
+                            
+                            rdfs:comment "Created: 10/17/2008 17:05:06"@en ;
+                            
+                            rdfs:range base:TYPE-REPO_ALIAS ;
+                            
+                            rdfs:domain base:TYPE-REPO_ESTADO_WEB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_WEB---PROTOCOLO
+
+base:TXT-ESTADO_WEB---PROTOCOLO rdf:type owl:ObjectProperty ;
+                                
+                                rdfs:label "Link Attribute ESTADO_WEB---PROTOCOLO"@en ;
+                                
+                                rdfs:comment "Created: 10/17/2008 17:04:40"@en ;
+                                
+                                rdfs:domain base:TYPE-REPO_ESTADO_WEB ;
+                                
+                                rdfs:range base:TYPE-REPO_PROTOCOLO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ESTADO_WEB---WSDL
+
+base:TXT-ESTADO_WEB---WSDL rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute ESTADO_WEB---WSDL"@en ;
+                           
+                           rdfs:comment "Created: 10/17/2008 17:05:30"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_ESTADO_WEB ;
+                           
+                           rdfs:range base:TYPE-REPO_WSDL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-EXCF---CTX
+
+base:TXT-EXCF---CTX rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute EXCF---CTX"@en ;
+                    
+                    rdfs:comment "Relacion con contexto"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_CTX ;
+                    
+                    rdfs:domain base:TYPE-REPO_EXCF .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-EXCF---MOD
+
+base:TXT-EXCF---MOD rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute EXCF---MOD"@en ;
+                    
+                    rdfs:comment "Created: 08/29/2008 10:17:20"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_EXCF ;
+                    
+                    rdfs:range base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-EXCF--PROY
+
+base:TXT-EXCF--PROY rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute EXCF--PROY"@en ;
+                    
+                    rdfs:comment "Proyectos de Fachada"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_EXCF ;
+                    
+                    rdfs:range base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FAC---IFAC
+
+base:TXT-FAC---IFAC rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute FAC---IFAC"@en ;
+                    
+                    rdfs:comment "Relacion con Interfaz de Fachada"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_FACPRI ,
+                                base:TYPE-REPO_FACPUB ;
+                    
+                    rdfs:range base:TYPE-REPO_IFAC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FACPRI--CLIE
+
+base:TXT-FACPRI--CLIE rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute FACPRI--CLIE"@en ;
+                      
+                      rdfs:comment "Cliente"@en ;
+                      
+                      rdfs:range base:TYPE-REPO_CLIE ;
+                      
+                      rdfs:domain base:TYPE-REPO_FACPRI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FACPRI--CLIE_ENTOR
+
+base:TXT-FACPRI--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute FACPRI--CLIE_ENTOR"@en ;
+                            
+                            rdfs:comment "Cliente Entorno"@en ;
+                            
+                            rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                            
+                            rdfs:domain base:TYPE-REPO_FACPRI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FACPRI--ENTOR
+
+base:TXT-FACPRI--ENTOR rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "Link Attribute FACPRI--ENTOR"@en ;
+                       
+                       rdfs:comment "Entorno"@en ;
+                       
+                       rdfs:range base:TYPE-REPO_ENTOR ;
+                       
+                       rdfs:domain base:TYPE-REPO_FACPRI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FACPRI--TIMESTAMP
+
+base:TXT-FACPRI--TIMESTAMP rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute FACPRI--TIMESTAMP"@en ;
+                           
+                           rdfs:comment "Timestamp"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST ;
+                           
+                           rdfs:domain base:TYPE-REPO_FACPRI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FACPUB--CLIE
+
+base:TXT-FACPUB--CLIE rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute FACPUB--CLIE"@en ;
+                      
+                      rdfs:comment "Cliente"@en ;
+                      
+                      rdfs:range base:TYPE-REPO_CLIE ;
+                      
+                      rdfs:domain base:TYPE-REPO_FACPUB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FACPUB--CLIE_ENTOR
+
+base:TXT-FACPUB--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute FACPUB--CLIE_ENTOR"@en ;
+                            
+                            rdfs:comment "Cliente Entorno"@en ;
+                            
+                            rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                            
+                            rdfs:domain base:TYPE-REPO_FACPUB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FACPUB--ENTOR
+
+base:TXT-FACPUB--ENTOR rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "Link Attribute FACPUB--ENTOR"@en ;
+                       
+                       rdfs:comment "Entorno"@en ;
+                       
+                       rdfs:range base:TYPE-REPO_ENTOR ;
+                       
+                       rdfs:domain base:TYPE-REPO_FACPUB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FACPUB--TIMESTAMP
+
+base:TXT-FACPUB--TIMESTAMP rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute FACPUB--TIMESTAMP"@en ;
+                           
+                           rdfs:comment "timestamp"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST ;
+                           
+                           rdfs:domain base:TYPE-REPO_FACPUB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-IFAC---PROY
+
+base:TXT-IFAC---PROY rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "Link Attribute IFAC---PROY"@en ;
+                     
+                     rdfs:comment "Relacion con Proyecto"@en ;
+                     
+                     rdfs:domain base:TYPE-REPO_IFAC ;
+                     
+                     rdfs:range base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-METH---OI
+
+base:TXT-METH---OI rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute METH---OI"@en ;
+                   
+                   rdfs:comment "Relacion con operacion"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_METHCOMP ,
+                               base:TYPE-REPO_METHIFAC ;
+                   
+                   rdfs:range base:TYPE-REPO_OI ,
+                              base:TYPE-REPO_OPER .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-METH---OP
+
+base:TXT-METH---OP rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute METH---OP"@en ;
+                   
+                   rdfs:comment "Created: 01/20/2009 09:58:34"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_METHCOMP ,
+                               base:TYPE-REPO_METHIFAC ;
+                   
+                   rdfs:range base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MOD--CLIE
+
+base:TXT-MOD--CLIE rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute MOD--CLIE"@en ;
+                   
+                   rdfs:comment "Cliente"@en ;
+                   
+                   rdfs:range base:TYPE-REPO_CLIE ;
+                   
+                   rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MOD--CLIE_ENTOR
+
+base:TXT-MOD--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute MOD--CLIE_ENTOR"@en ;
+                         
+                         rdfs:comment "Cliente entorno"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                         
+                         rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MOD--ENTOR
+
+base:TXT-MOD--ENTOR rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute MOD--ENTOR"@en ;
+                    
+                    rdfs:comment "Entorno"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_ENTOR ;
+                    
+                    rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MOD--TIMESTAMP
+
+base:TXT-MOD--TIMESTAMP rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute MOD--TIMESTAMP"@en ;
+                        
+                        rdfs:comment "Timestamp"@en ;
+                        
+                        rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST ;
+                        
+                        rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MOD2--CLIE
+
+base:TXT-MOD2--CLIE rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute MOD2--CLIE"@en ;
+                    
+                    rdfs:comment "Cliente"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_CLIE ;
+                    
+                    rdfs:domain base:TYPE-REPO_MOD2 .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MOD2--CLIE_ENTOR
+
+base:TXT-MOD2--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute MOD2--CLIE_ENTOR"@en ;
+                          
+                          rdfs:comment "Cliente Entorno"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                          
+                          rdfs:domain base:TYPE-REPO_MOD2 .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MOD2--ENTOR
+
+base:TXT-MOD2--ENTOR rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "Link Attribute MOD2--ENTOR"@en ;
+                     
+                     rdfs:comment "Entorno"@en ;
+                     
+                     rdfs:range base:TYPE-REPO_ENTOR ;
+                     
+                     rdfs:domain base:TYPE-REPO_MOD2 .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MOD2--TIMESTAMP
+
+base:TXT-MOD2--TIMESTAMP rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute MOD2--TIMESTAMP"@en ;
+                         
+                         rdfs:comment "Timestamp"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST ;
+                         
+                         rdfs:domain base:TYPE-REPO_MOD2 .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MODLN---ALN
+
+base:TXT-MODLN---ALN rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "Link Attribute MODLN---ALN"@en ;
+                     
+                     rdfs:comment "Created: 01/14/2009 11:15:33"@en ;
+                     
+                     rdfs:range base:TYPE-REPO_ALN ;
+                     
+                     rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MODLN---COMP_ADAP
+
+base:TXT-MODLN---COMP_ADAP rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute MODLN---COMP_ADAP"@en ;
+                           
+                           rdfs:comment "Created: 01/14/2009 11:15:18"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_COMP_ADAP ;
+                           
+                           rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MODLN---COMP_JAVA
+
+base:TXT-MODLN---COMP_JAVA rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute MODLN---COMP_JAVA"@en ;
+                           
+                           rdfs:comment "Created: 01/14/2009 11:13:53"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_COMP_JAVA ;
+                           
+                           rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MODLN---COMP_SQL
+
+base:TXT-MODLN---COMP_SQL rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute MODLN---COMP_SQL"@en ;
+                          
+                          rdfs:comment "Created: 01/14/2009 11:13:37"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_COMP_SQL ;
+                          
+                          rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MODLN---FACPRI
+
+base:TXT-MODLN---FACPRI rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute MODLN---FACPRI"@en ;
+                        
+                        rdfs:comment "Created: 01/14/2009 11:12:51"@en ;
+                        
+                        rdfs:range base:TYPE-REPO_FACPRI ;
+                        
+                        rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MODLN---FACPRI2
+
+base:TXT-MODLN---FACPRI2 rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute MODLN---FACPRI2"@en ;
+                         
+                         rdfs:comment "Created: 01/14/2009 11:13:20"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_FACPRI ;
+                         
+                         rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MODLN---FACPUB
+
+base:TXT-MODLN---FACPUB rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute MODLN---FACPUB"@en ;
+                        
+                        rdfs:comment "Created: 01/14/2009 11:12:33"@en ;
+                        
+                        rdfs:range base:TYPE-REPO_FACPUB ;
+                        
+                        rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-MODLN---FACPUB2
+
+base:TXT-MODLN---FACPUB2 rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute MODLN---FACPUB2"@en ;
+                         
+                         rdfs:comment "Created: 01/14/2009 11:13:11"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_FACPUB ;
+                         
+                         rdfs:domain base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OPER---CTX
+
+base:TXT-OPER---CTX rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute OPER---CTX"@en ;
+                    
+                    rdfs:comment "Relacion con Contexto"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_CTX ;
+                    
+                    rdfs:domain base:TYPE-REPO_OI ,
+                                base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OPER---DOPER
+
+base:TXT-OPER---DOPER rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute OPER---DOPER"@en ;
+                      
+                      rdfs:comment "Created: 01/16/2009 09:28:04"@en ;
+                      
+                      rdfs:range base:TYPE-REPO_DOPER ;
+                      
+                      rdfs:domain base:TYPE-REPO_OI ,
+                                  base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OPER---ESTADO_OI
+
+base:TXT-OPER---ESTADO_OI rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute OPER---ESTADO_OI"@en ;
+                          
+                          rdfs:comment "Created: 10/17/2008 17:00:31"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_ESTADO_OI ;
+                          
+                          rdfs:domain base:TYPE-REPO_OI ,
+                                      base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OPER---ESTADO_OP
+
+base:TXT-OPER---ESTADO_OP rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute OPER---ESTADO_OP"@en ;
+                          
+                          rdfs:comment "Created: 10/17/2008 17:00:39"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_ESTADO_OP ;
+                          
+                          rdfs:domain base:TYPE-REPO_OI ,
+                                      base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OPER---ESTADO_SAT
+
+base:TXT-OPER---ESTADO_SAT rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute OPER---ESTADO_SAT"@en ;
+                           
+                           rdfs:comment "Created: 01/19/2009 15:55:30"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_ESTADO_SAT ;
+                           
+                           rdfs:domain base:TYPE-REPO_OI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OPER---ESTADO_TRXO
+
+base:TXT-OPER---ESTADO_TRXO rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute OPER---ESTADO_TRXO"@en ;
+                            
+                            rdfs:comment "Created: 01/19/2009 15:32:49"@en ;
+                            
+                            rdfs:range base:TYPE-REPO_ESTADO_TRXO ;
+                            
+                            rdfs:domain base:TYPE-REPO_OI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OPER---ESTADO_WEB
+
+base:TXT-OPER---ESTADO_WEB rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute OPER---ESTADO_WEB"@en ;
+                           
+                           rdfs:comment "Created: 10/17/2008 17:00:22"@en ;
+                           
+                           rdfs:range base:TYPE-REPO_ESTADO_WEB ;
+                           
+                           rdfs:domain base:TYPE-REPO_OI ,
+                                       base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OPER--BHTC
+
+base:TXT-OPER--BHTC rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute OPER--BHTC"@en ;
+                    
+                    rdfs:comment "BHTC que usa"@en ;
+                    
+                    rdfs:range base:TYPE-BH_BHTC ;
+                    
+                    rdfs:domain base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PARA--CB
+
+base:TXT-PARA--CB rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "Link Attribute PARA--CB"@en ;
+                  
+                  rdfs:comment "contexbean"@en ;
+                  
+                  rdfs:range base:TYPE-REPO_CB ;
+                  
+                  rdfs:domain base:TYPE-REPO_PARA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PARA--TIPD
+
+base:TXT-PARA--TIPD rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute PARA--TIPD"@en ;
+                    
+                    rdfs:comment "Tipo de Datos"@en ;
+                    
+                    rdfs:domain base:TYPE-REPO_PARA ;
+                    
+                    rdfs:range base:TYPE-REPO_TIPD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PROY--CLIE
+
+base:TXT-PROY--CLIE rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute PROY--CLIE"@en ;
+                    
+                    rdfs:comment "Cliente"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_CLIE ;
+                    
+                    rdfs:domain base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PROY--CLIE_ENTOR
+
+base:TXT-PROY--CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute PROY--CLIE_ENTOR"@en ;
+                          
+                          rdfs:comment "Cliente Entorno"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                          
+                          rdfs:domain base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PROY--ENTOR
+
+base:TXT-PROY--ENTOR rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "Link Attribute PROY--ENTOR"@en ;
+                     
+                     rdfs:comment "Entorno"@en ;
+                     
+                     rdfs:range base:TYPE-REPO_ENTOR ;
+                     
+                     rdfs:domain base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PROY--FACPUB
+
+base:TXT-PROY--FACPUB rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute PROY--FACPUB"@en ;
+                      
+                      rdfs:comment "Fachadas Públicas"@en ;
+                      
+                      rdfs:range base:TYPE-REPO_FACPUB ;
+                      
+                      rdfs:domain base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PROY--TIMESTAMP
+
+base:TXT-PROY--TIMESTAMP rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute PROY--TIMESTAMP"@en ;
+                         
+                         rdfs:comment "TIMESTAMP"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_CLIE_ENTOR_TIMEST ;
+                         
+                         rdfs:domain base:TYPE-REPO_PROY .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SERVICIO--APLICACION
+
+base:TXT-SERVICIO--APLICACION rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute SERVICIO--APLICACION"@en ;
+                              
+                              rdfs:comment "Created: 05/26/2010 14:41:52"@en ;
+                              
+                              rdfs:range base:TYPE-REPO_APLINF ;
+                              
+                              rdfs:domain base:TYPE-REPO_DEFAPL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SERVICIO--ESTADOS
+
+base:TXT-SERVICIO--ESTADOS rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute SERVICIO--ESTADOS"@en ;
+                           
+                           rdfs:comment "Estados SGS"@en ;
+                           
+                           rdfs:range base:TYPE-ISB_ESTADOS ;
+                           
+                           rdfs:domain base:TYPE-REPO_DEFAPL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SERVICIO--OPERACION
+
+base:TXT-SERVICIO--OPERACION rdf:type owl:ObjectProperty ;
+                             
+                             rdfs:label "Link Attribute SERVICIO--OPERACION"@en ;
+                             
+                             rdfs:comment "Servicion funcional ->Operación funcional"@en ;
+                             
+                             rdfs:range base:TYPE-AR_OPERACION ;
+                             
+                             rdfs:domain base:TYPE-REPO_DEFAPL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SERVICIO--SERVICIO_VERSION
+
+base:TXT-SERVICIO--SERVICIO_VERSION rdf:type owl:ObjectProperty ;
+                                    
+                                    rdfs:label "Link Attribute SERVICIO--SERVICIO_VERSION"@en ;
+                                    
+                                    rdfs:comment "Servicio funcional ->Servicio funcional versión"@en ;
+                                    
+                                    rdfs:range base:TYPE-AR_SERVICIO_VERSION ;
+                                    
+                                    rdfs:domain base:TYPE-REPO_DEFAPL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SERVICIO--ULTIMA_VERSION
+
+base:TXT-SERVICIO--ULTIMA_VERSION rdf:type owl:ObjectProperty ;
+                                  
+                                  rdfs:label "Link Attribute SERVICIO--ULTIMA_VERSION"@en ;
+                                  
+                                  rdfs:comment "Ultima versión"@en ;
+                                  
+                                  rdfs:range base:TYPE-AR_SERVICIO_VERSION ;
+                                  
+                                  rdfs:domain base:TYPE-REPO_DEFAPL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SISTEM---APLINF
+
+base:TXT-SISTEM---APLINF rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute SISTEM---APLINF"@en ;
+                         
+                         rdfs:comment "Relacion con Aplicacion Informatica"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_APLINF ;
+                         
+                         rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SUBSISTEMA--APLICACION_TOD
+
+base:TXT-SUBSISTEMA--APLICACION_TOD rdf:type owl:ObjectProperty ;
+                                    
+                                    rdfs:label "Link Attribute SUBSISTEMA--APLICACION_TOD"@en ;
+                                    
+                                    rdfs:comment "Susbsistema ->Aplicación"@en ;
+                                    
+                                    rdfs:range base:TYPE-REPO_APLINF ;
+                                    
+                                    rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SUBSISTEMA--APLICACION_USA
+
+base:TXT-SUBSISTEMA--APLICACION_USA rdf:type owl:ObjectProperty ;
+                                    
+                                    rdfs:label "Link Attribute SUBSISTEMA--APLICACION_USA"@en ;
+                                    
+                                    rdfs:comment "Subsitema ->Aplicacion (Usa)"@en ;
+                                    
+                                    rdfs:range base:TYPE-REPO_APLINF ;
+                                    
+                                    rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SUBSISTEMA--APLICACION_VERSION
+
+base:TXT-SUBSISTEMA--APLICACION_VERSION rdf:type owl:ObjectProperty ;
+                                        
+                                        rdfs:label "Link Attribute SUBSISTEMA--APLICACION_VERSION"@en ;
+                                        
+                                        rdfs:comment "Created: 05/06/2010 10:55:12"@en ;
+                                        
+                                        rdfs:range base:TYPE-AR_APLICACION_VERSION ;
+                                        
+                                        rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SUBSISTEMA--CAPA
+
+base:TXT-SUBSISTEMA--CAPA rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute SUBSISTEMA--CAPA"@en ;
+                          
+                          rdfs:comment "Subsistema ->Capa"@en ;
+                          
+                          rdfs:range base:TYPE-AR_CAPA ;
+                          
+                          rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SUBSISTEMA--SINONIMO
+
+base:TXT-SUBSISTEMA--SINONIMO rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute SUBSISTEMA--SINONIMO"@en ;
+                              
+                              rdfs:comment "Created: 04/12/2010 12:22:27"@en ;
+                              
+                              rdfs:range base:TYPE-AR_SINONIMO ;
+                              
+                              rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SUBSISTEMA--SISTEMA
+
+base:TXT-SUBSISTEMA--SISTEMA rdf:type owl:ObjectProperty ;
+                             
+                             rdfs:label "Link Attribute SUBSISTEMA--SISTEMA"@en ;
+                             
+                             rdfs:comment "Created: 05/26/2010 14:43:59"@en ;
+                             
+                             rdfs:range base:TYPE-AR_SISTEMA ;
+                             
+                             rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SUBSISTEMA--USUARIO
+
+base:TXT-SUBSISTEMA--USUARIO rdf:type owl:ObjectProperty ;
+                             
+                             rdfs:label "Link Attribute SUBSISTEMA--USUARIO"@en ;
+                             
+                             rdfs:comment "Usuario"@en ;
+                             
+                             rdfs:domain base:TYPE-REPO_SISTEM ;
+                             
+                             rdfs:range base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SUBSISTEMA--VISION
+
+base:TXT-SUBSISTEMA--VISION rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "Link Attribute SUBSISTEMA--VISION"@en ;
+                            
+                            rdfs:comment "Created: 04/12/2010 12:22:41"@en ;
+                            
+                            rdfs:range base:TYPE-AR_VISION ;
+                            
+                            rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TDC---TIPDMF
+
+base:TXT-TDC---TIPDMF rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute TDC---TIPDMF"@en ;
+                      
+                      rdfs:comment "Created: 12/11/2008 13:38:57"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_TDC ;
+                      
+                      rdfs:range base:TYPE-REPO_TIPDMF .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TDC---TIPDML
+
+base:TXT-TDC---TIPDML rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute TDC---TIPDML"@en ;
+                      
+                      rdfs:comment "Created: 12/11/2008 13:38:44"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_TDC ;
+                      
+                      rdfs:range base:TYPE-REPO_TIPDML .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIMESTAMP---CLIE
+
+base:TXT-TIMESTAMP---CLIE rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute TIMESTAMP---CLIE"@en ;
+                          
+                          rdfs:comment "Created: 07/21/2008 13:52:46"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_CLIE ;
+                          
+                          rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIMESTAMP---CLIE_ENTOR
+
+base:TXT-TIMESTAMP---CLIE_ENTOR rdf:type owl:ObjectProperty ;
+                                
+                                rdfs:label "Link Attribute TIMESTAMP---CLIE_ENTOR"@en ;
+                                
+                                rdfs:comment "Created: 07/21/2008 13:52:23"@en ;
+                                
+                                rdfs:range base:TYPE-REPO_CLIE_ENTOR ;
+                                
+                                rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIMESTAMP---ENTOR
+
+base:TXT-TIMESTAMP---ENTOR rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "Link Attribute TIMESTAMP---ENTOR"@en ;
+                           
+                           rdfs:comment "Created: 07/21/2008 13:52:00"@en ;
+                           
+                           rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST ;
+                           
+                           rdfs:range base:TYPE-REPO_ENTOR .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIMESTAMP--CLIE_LIN
+
+base:TXT-TIMESTAMP--CLIE_LIN rdf:type owl:ObjectProperty ;
+                             
+                             rdfs:label "Link Attribute TIMESTAMP--CLIE_LIN"@en ;
+                             
+                             rdfs:comment "Created: 09/01/2009 17:08:46"@en ;
+                             
+                             rdfs:range base:TYPE-H_REPO_CLIE_LIN ;
+                             
+                             rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIMESTAMP--CLIE_LIN_ENTOR
+
+base:TXT-TIMESTAMP--CLIE_LIN_ENTOR rdf:type owl:ObjectProperty ;
+                                   
+                                   rdfs:label "Link Attribute TIMESTAMP--CLIE_LIN_ENTOR"@en ;
+                                   
+                                   rdfs:comment "Created: 09/01/2009 17:09:54"@en ;
+                                   
+                                   rdfs:range base:TYPE-H_REPO_CLIE_LIN_ENTOR ;
+                                   
+                                   rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIMESTAMP--LIN
+
+base:TXT-TIMESTAMP--LIN rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute TIMESTAMP--LIN"@en ;
+                        
+                        rdfs:comment "Created: 09/01/2009 17:09:00"@en ;
+                        
+                        rdfs:range base:TYPE-H_REPO_LIN ;
+                        
+                        rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIMESTAMP--LIN_ENTOR
+
+base:TXT-TIMESTAMP--LIN_ENTOR rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:label "Link Attribute TIMESTAMP--LIN_ENTOR"@en ;
+                              
+                              rdfs:comment "Created: 09/01/2009 17:09:19"@en ;
+                              
+                              rdfs:range base:TYPE-H_REPO_LIN_ENTOR ;
+                              
+                              rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIPD---CTX
+
+base:TXT-TIPD---CTX rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute TIPD---CTX"@en ;
+                    
+                    rdfs:comment "Created: 05/28/2008 10:12:27"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_CTX ;
+                    
+                    rdfs:domain base:TYPE-REPO_TIPD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIPD---OI
+
+base:TXT-TIPD---OI rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute TIPD---OI"@en ;
+                   
+                   rdfs:comment "Created: 04/21/2010 17:13:33"@en ;
+                   
+                   rdfs:range base:TYPE-REPO_OI ;
+                   
+                   rdfs:domain base:TYPE-REPO_TIPD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIPD---OP
+
+base:TXT-TIPD---OP rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "Link Attribute TIPD---OP"@en ;
+                   
+                   rdfs:comment "Created: 04/21/2010 17:13:44"@en ;
+                   
+                   rdfs:range base:TYPE-REPO_OP ;
+                   
+                   rdfs:domain base:TYPE-REPO_TIPD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIPDMF---TIPD
+
+base:TXT-TIPDMF---TIPD rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "Link Attribute TIPDMF---TIPD"@en ;
+                       
+                       rdfs:comment "Created: 12/15/2008 10:34:43"@en ;
+                       
+                       rdfs:range base:TYPE-REPO_TIPD ;
+                       
+                       rdfs:domain base:TYPE-REPO_TIPDMF .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIPDML---TIPDL
+
+base:TXT-TIPDML---TIPDL rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute TIPDML---TIPDL"@en ;
+                        
+                        rdfs:comment "Created: 12/15/2008 10:36:31"@en ;
+                        
+                        rdfs:range base:TYPE-REPO_TIPDL ;
+                        
+                        rdfs:domain base:TYPE-REPO_TIPDML .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TRANS--ACTIVO
+
+base:TXT-TRANS--ACTIVO rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "Link Attribute TRANS--ACTIVO"@en ;
+                       
+                       rdfs:comment "Activo"@en ;
+                       
+                       rdfs:range base:TYPE-REPO_ACTIVO ;
+                       
+                       rdfs:domain base:TYPE-REPO_TRANS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TRANS--ALIAS
+
+base:TXT-TRANS--ALIAS rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute TRANS--ALIAS"@en ;
+                      
+                      rdfs:comment "Alias"@en ;
+                      
+                      rdfs:range base:TYPE-REPO_ALIAS ;
+                      
+                      rdfs:domain base:TYPE-REPO_TRANS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TRANS--PROTOCOLO
+
+base:TXT-TRANS--PROTOCOLO rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:label "Link Attribute TRANS--PROTOCOLO"@en ;
+                          
+                          rdfs:comment "Protocolo"@en ;
+                          
+                          rdfs:range base:TYPE-REPO_PROTOCOLO ;
+                          
+                          rdfs:domain base:TYPE-REPO_TRANS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TRXO---TRX
+
+base:TXT-TRXO---TRX rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute TRXO---TRX"@en ;
+                    
+                    rdfs:comment "Created: 01/19/2009 16:25:50"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_TRX ;
+                    
+                    rdfs:domain base:TYPE-REPO_TRXO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-USUARIO--AREA
+
+base:TXT-USUARIO--AREA rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "Link Attribute USUARIO--AREA"@en ;
+                       
+                       rdfs:comment "Areas"@en ;
+                       
+                       rdfs:range base:TYPE-REPO_AREA ;
+                       
+                       rdfs:domain base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-WEB---FACPRI
+
+base:TXT-WEB---FACPRI rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute WEB---FACPRI"@en ;
+                      
+                      rdfs:comment "Created: 01/19/2009 11:24:49"@en ;
+                      
+                      rdfs:range base:TYPE-REPO_FACPRI ;
+                      
+                      rdfs:domain base:TYPE-REPO_WEB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-WEB---FACPUB
+
+base:TXT-WEB---FACPUB rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "Link Attribute WEB---FACPUB"@en ;
+                      
+                      rdfs:comment "Relacion con Fachada"@en ;
+                      
+                      rdfs:range base:TYPE-REPO_FACPUB ;
+                      
+                      rdfs:domain base:TYPE-REPO_WEB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-WEB---PROY
+
+base:TXT-WEB---PROY rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "Link Attribute WEB---PROY"@en ;
+                    
+                    rdfs:comment "Relacion con Proyecto"@en ;
+                    
+                    rdfs:range base:TYPE-REPO_PROY ;
+                    
+                    rdfs:domain base:TYPE-REPO_WEB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-WEB_METH---METH
+
+base:TXT-WEB_METH---METH rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:label "Link Attribute WEB_METH---METH"@en ;
+                         
+                         rdfs:comment "Created: 09/04/2008 15:24:36"@en ;
+                         
+                         rdfs:range base:TYPE-REPO_METHIFAC ;
+                         
+                         rdfs:domain base:TYPE-REPO_WEB_METH .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-WEB_METH---WEB
+
+base:TXT-WEB_METH---WEB rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:label "Link Attribute WEB_METH---WEB"@en ;
+                        
+                        rdfs:comment "Created: 09/04/2008 15:26:52"@en ;
+                        
+                        rdfs:range base:TYPE-REPO_WEB ;
+                        
+                        rdfs:domain base:TYPE-REPO_WEB_METH .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-AREA
+
+base:TXT-AREA rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "Text Attribute AREA"@en ;
+              
+              rdfs:comment "ARE"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-BUSINESS_NAME
+
+base:TXT-BUSINESS_NAME rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:label "Text Attribute BUSINESS_NAME"@en ;
+                       
+                       rdfs:comment "Created: 12/02/2009 11:45:09"@en ;
+                       
+                       rdfs:domain base:TYPE-REPO_APLINF ,
+                                   base:TYPE-REPO_CLIE ,
+                                   base:TYPE-REPO_CLIE_ENTOR ,
+                                   base:TYPE-REPO_DEFAPL ,
+                                   base:TYPE-REPO_ENTOR ,
+                                   base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLASEIM
+
+base:TXT-CLASEIM rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute CLASEIM"@en ;
+                 
+                 rdfs:comment "Created: 12/11/2008 13:45:06"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLAVE
+
+base:TXT-CLAVE rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "Text Attribute CLAVE"@en ;
+               
+               rdfs:comment "CLAVE"@en ;
+               
+               rdfs:domain base:TYPE-REPO_CB ,
+                           base:TYPE-REPO_CONTEX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLAVE_CTX
+
+base:TXT-CLAVE_CTX rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:label "Text Attribute CLAVE_CTX"@en ;
+                   
+                   rdfs:comment "Created: 12/12/2008 13:32:26"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_CONTEX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CLIENTE
+
+base:TXT-CLIENTE rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute CLIENTE"@en ;
+                 
+                 rdfs:comment "Created: 07/21/2008 13:53:34"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_CLIE_ENTOR ,
+                             base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CODATO
+
+base:TXT-CODATO rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute CODATO"@en ;
+                
+                rdfs:comment "Created: 12/11/2008 13:43:42"@en ;
+                
+                rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CODIGO
+
+base:TXT-CODIGO rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute CODIGO"@en ;
+                
+                rdfs:comment "Codigo  Created: 12/14/2006 16:42:14"@en ;
+                
+                rdfs:domain base:TYPE-REPO_APLINF ,
+                            base:TYPE-REPO_CLIE ,
+                            base:TYPE-REPO_DEFAPL ,
+                            base:TYPE-REPO_EXCF ,
+                            base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CODUSURI
+
+base:TXT-CODUSURI rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute CODUSURI"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 14:02:26"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_COMPOS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CONCEPBL
+
+base:TXT-CONCEPBL rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute CONCEPBL"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 13:53:00"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_CONCEP_MULTI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-CONSULTA
+
+base:TXT-CONSULTA rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute CONSULTA"@en ;
+                  
+                  rdfs:comment "Consulta SQL"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_SQL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DEFECTO
+
+base:TXT-DEFECTO rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute DEFECTO"@en ;
+                 
+                 rdfs:comment "Created: 12/11/2008 13:54:09"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_CONCEP_MULTI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DEFINITION
+
+base:TXT-DEFINITION rdf:type owl:DatatypeProperty ;
+                    
+                    rdfs:label "Item definition"@en ;
+                    
+                    rdfs:comment "The definition text attribute consists of one line and <BR/> contains in short form the specification/function of the <BR/> item. DEFINITION could also be designated as long name. <BR/> By default, the item definition text is shown in all the <BR/> selections. In this overview, it should allow an  <BR/> identification of the item. <BR/>   <BR/> The text attribute DEFINITION is present in each active <BR/> item. If this attribute is not created by the user, and  <BR/> there is no initial text defined (attribute AP-INIT), it <BR/> is generated automatically by Rochade: <BR/>   <BR/> \"CREATED <date><time><user>\" <BR/>   <BR/> <h4>Help-Text:</h4> <p><pre>Please enter the one-line designation of the item.  It can be shown in selection lists and supports the  identification (what is contained in the item?). <h4>Init-Text:</h4> <p><pre>Automatically generated </pre></p> <h4>Interfaces:</h4> <br>"@en ;
+                    
+                    rdfs:domain base:TYPE-AP-ITEMTYPE ,
+                                base:TYPE-REPO_ACTIVO ,
+                                base:TYPE-REPO_ALIAS ,
+                                base:TYPE-REPO_ALN ,
+                                base:TYPE-REPO_ALP ,
+                                base:TYPE-REPO_APL2 ,
+                                base:TYPE-REPO_APLICF ,
+                                base:TYPE-REPO_APLICF_FECHA ,
+                                base:TYPE-REPO_APLICF_VERS ,
+                                base:TYPE-REPO_APLINF ,
+                                base:TYPE-REPO_AREA ,
+                                base:TYPE-REPO_CB ,
+                                base:TYPE-REPO_CLIE ,
+                                base:TYPE-REPO_CLIE_ENTOR ,
+                                base:TYPE-REPO_CLIE_ENTOR_TIMEST ,
+                                base:TYPE-REPO_CLIE_FECHA_ENV ,
+                                base:TYPE-REPO_COMPOS ,
+                                base:TYPE-REPO_COMP_ADAP ,
+                                base:TYPE-REPO_COMP_JAVA ,
+                                base:TYPE-REPO_COMP_SQL ,
+                                base:TYPE-REPO_CONCEP_MULTI ,
+                                base:TYPE-REPO_CONTEX ,
+                                base:TYPE-REPO_DALN ,
+                                base:TYPE-REPO_DALP ,
+                                base:TYPE-REPO_DAPL2 ,
+                                base:TYPE-REPO_DCOMP_ADAP ,
+                                base:TYPE-REPO_DCOMP_JAVA ,
+                                base:TYPE-REPO_DCOMP_SQL ,
+                                base:TYPE-REPO_DEFAPL ,
+                                base:TYPE-REPO_DENS ,
+                                base:TYPE-REPO_DESC ,
+                                base:TYPE-REPO_DFAC_PRI ,
+                                base:TYPE-REPO_DFAC_PUB ,
+                                base:TYPE-REPO_DIFAC ,
+                                base:TYPE-REPO_DMLN ,
+                                base:TYPE-REPO_DMLP ,
+                                base:TYPE-REPO_DOPER ,
+                                base:TYPE-REPO_DPROY ,
+                                base:TYPE-REPO_DWEB ,
+                                base:TYPE-REPO_ENS ,
+                                base:TYPE-REPO_ENTOR ,
+                                base:TYPE-REPO_ESC ,
+                                base:TYPE-REPO_ESTADO_OI ,
+                                base:TYPE-REPO_ESTADO_OP ,
+                                base:TYPE-REPO_ESTADO_SAT ,
+                                base:TYPE-REPO_ESTADO_TRXO ,
+                                base:TYPE-REPO_ESTADO_WEB ,
+                                base:TYPE-REPO_EXCF ,
+                                base:TYPE-REPO_FACPRI ,
+                                base:TYPE-REPO_FACPUB ,
+                                base:TYPE-REPO_IFAC ,
+                                base:TYPE-REPO_METHCOMP ,
+                                base:TYPE-REPO_METHIFAC ,
+                                base:TYPE-REPO_MOD ,
+                                base:TYPE-REPO_MOD2 ,
+                                base:TYPE-REPO_OI ,
+                                base:TYPE-REPO_OP ,
+                                base:TYPE-REPO_PARA ,
+                                base:TYPE-REPO_PREENS ,
+                                base:TYPE-REPO_PROTOCOLO ,
+                                base:TYPE-REPO_PROY ,
+                                base:TYPE-REPO_SISTEM ,
+                                base:TYPE-REPO_SQL ,
+                                base:TYPE-REPO_TDC ,
+                                base:TYPE-REPO_TIPD ,
+                                base:TYPE-REPO_TIPDL ,
+                                base:TYPE-REPO_TIPDMF ,
+                                base:TYPE-REPO_TIPDML ,
+                                base:TYPE-REPO_TRANS ,
+                                base:TYPE-REPO_TRXO ,
+                                base:TYPE-REPO_USUARIO ,
+                                base:TYPE-REPO_WEB ,
+                                base:TYPE-REPO_WEB_METH ,
+                                base:TYPE-REPO_WSDL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DEPARTAMENTO
+
+base:TXT-DEPARTAMENTO rdf:type owl:DatatypeProperty ;
+                      
+                      rdfs:label "Text Attribute DEPARTAMENTO"@en ;
+                      
+                      rdfs:comment "Departament"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DES10000
+
+base:TXT-DES10000 rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute DES10000"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 13:41:06"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESC100
+
+base:TXT-DESC100 rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute DESC100"@en ;
+                 
+                 rdfs:comment "Created: 12/11/2008 13:53:38"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_CONCEP_MULTI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION
+
+base:TXT-DESCRIPCION rdf:type owl:DatatypeProperty ;
+                     
+                     rdfs:label "Text Attribute DESCRIPCION"@en ;
+                     
+                     rdfs:comment "Descripcion"@en ;
+                     
+                     rdfs:domain base:TYPE-REPO_ALN ,
+                                 base:TYPE-REPO_ALP ,
+                                 base:TYPE-REPO_APL2 ,
+                                 base:TYPE-REPO_APLICF ,
+                                 base:TYPE-REPO_APLICF_VERS ,
+                                 base:TYPE-REPO_CB ,
+                                 base:TYPE-REPO_CLIE ,
+                                 base:TYPE-REPO_COMP_ADAP ,
+                                 base:TYPE-REPO_COMP_JAVA ,
+                                 base:TYPE-REPO_COMP_SQL ,
+                                 base:TYPE-REPO_DFAC_PRI ,
+                                 base:TYPE-REPO_DFAC_PUB ,
+                                 base:TYPE-REPO_DOPER ,
+                                 base:TYPE-REPO_ENS ,
+                                 base:TYPE-REPO_FACPRI ,
+                                 base:TYPE-REPO_FACPUB ,
+                                 base:TYPE-REPO_IFAC ,
+                                 base:TYPE-REPO_METHCOMP ,
+                                 base:TYPE-REPO_METHIFAC ,
+                                 base:TYPE-REPO_MOD ,
+                                 base:TYPE-REPO_MOD2 ,
+                                 base:TYPE-REPO_OI ,
+                                 base:TYPE-REPO_OP ,
+                                 base:TYPE-REPO_PARA ,
+                                 base:TYPE-REPO_SISTEM ,
+                                 base:TYPE-REPO_WEB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_1
+
+base:TXT-DESCRIPCION_1 rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:label "Text Attribute DESCRIPCION_1"@en ;
+                       
+                       rdfs:comment "Descripcion_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_2
+
+base:TXT-DESCRIPCION_2 rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:label "Text Attribute DESCRIPCION_2"@en ;
+                       
+                       rdfs:comment "Descripcion_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_3
+
+base:TXT-DESCRIPCION_3 rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:label "Text Attribute DESCRIPCION_3"@en ;
+                       
+                       rdfs:comment "Descripcion_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_4
+
+base:TXT-DESCRIPCION_4 rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:label "Text Attribute DESCRIPCION_4"@en ;
+                       
+                       rdfs:comment "Descripcion_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_5
+
+base:TXT-DESCRIPCION_5 rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:label "Text Attribute DESCRIPCION_5"@en ;
+                       
+                       rdfs:comment "Descripcion_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_TRADUCIDA_1
+
+base:TXT-DESCRIPCION_TRADUCIDA_1 rdf:type owl:DatatypeProperty ;
+                                 
+                                 rdfs:label "Text Attribute DESCRIPCION_TRADUCIDA_1"@en ;
+                                 
+                                 rdfs:comment "DESCRIPCION_TRADUCIDA_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_TRADUCIDA_2
+
+base:TXT-DESCRIPCION_TRADUCIDA_2 rdf:type owl:DatatypeProperty ;
+                                 
+                                 rdfs:label "Text Attribute DESCRIPCION_TRADUCIDA_2"@en ;
+                                 
+                                 rdfs:comment "DESCRIPCION_TRADUCIDA_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_TRADUCIDA_3
+
+base:TXT-DESCRIPCION_TRADUCIDA_3 rdf:type owl:DatatypeProperty ;
+                                 
+                                 rdfs:label "Text Attribute DESCRIPCION_TRADUCIDA_3"@en ;
+                                 
+                                 rdfs:comment "DESCRIPCION_TRADUCIDA_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_TRADUCIDA_4
+
+base:TXT-DESCRIPCION_TRADUCIDA_4 rdf:type owl:DatatypeProperty ;
+                                 
+                                 rdfs:label "Text Attribute DESCRIPCION_TRADUCIDA_4"@en ;
+                                 
+                                 rdfs:comment "DESCRIPCION_TRADUCIDA_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DESCRIPCION_TRADUCIDA_5
+
+base:TXT-DESCRIPCION_TRADUCIDA_5 rdf:type owl:DatatypeProperty ;
+                                 
+                                 rdfs:label "Text Attribute DESCRIPCION_TRADUCIDA_5"@en ;
+                                 
+                                 rdfs:comment "DESCRIPCION_TRADUCIDA_"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-DETALLE
+
+base:TXT-DETALLE rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute DETALLE"@en ;
+                 
+                 rdfs:comment "Created: 12/18/2008 16:08:29"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_APLICF_FECHA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-EMAIL
+
+base:TXT-EMAIL rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "Text Attribute EMAIL"@en ;
+               
+               rdfs:comment "Email"@en ;
+               
+               rdfs:domain base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENTORNO
+
+base:TXT-ENTORNO rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute ENTORNO"@en ;
+                 
+                 rdfs:comment "Created: 06/03/2008 13:05:17"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_CLIE_ENTOR ,
+                             base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENTRADA
+
+base:TXT-ENTRADA rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute ENTRADA"@en ;
+                 
+                 rdfs:comment "Entrada"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_CONTEX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ENVIADO_HOST
+
+base:TXT-ENVIADO_HOST rdf:type owl:DatatypeProperty ;
+                      
+                      rdfs:label "Text Attribute ENVIADO_HOST"@en ;
+                      
+                      rdfs:comment "Marca lógica que indica si se ha enviado a host.Valores(SI/NO)"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_APLINF ,
+                                  base:TYPE-REPO_DEFAPL ,
+                                  base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ES_PORTAL
+
+base:TXT-ES_PORTAL rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:label "Text Attribute ES_PORTAL"@en ;
+                   
+                   rdfs:comment "ES_PORTA"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-EXCLUSIV
+
+base:TXT-EXCLUSIV rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute EXCLUSIV"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 13:45:20"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FECALTA
+
+base:TXT-FECALTA rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute FECALTA"@en ;
+                 
+                 rdfs:comment "Fecha de Alta"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_COMPOS ,
+                             base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FECHA
+
+base:TXT-FECHA rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "Text Attribute FECHA"@en ;
+               
+               rdfs:comment "Created: 12/12/2006 10:03:09"@en ;
+               
+               rdfs:domain base:TYPE-REPO_APLICF_FECHA .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FECH_ALT
+
+base:TXT-FECH_ALT rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute FECH_ALT"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 13:54:26"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_CONCEP_MULTI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-FORMATO
+
+base:TXT-FORMATO rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute FORMATO"@en ;
+                 
+                 rdfs:comment "Created: 12/11/2008 13:53:55"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_CONCEP_MULTI .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-GERENCIA
+
+base:TXT-GERENCIA rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute GERENCIA"@en ;
+                  
+                  rdfs:comment "Gerenci"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ID
+
+base:TXT-ID rdf:type owl:DatatypeProperty ;
+            
+            rdfs:label "Text Attribute ID"@en ;
+            
+            rdfs:comment "id"@en ;
+            
+            rdfs:domain base:TYPE-REPO_APLICF .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-IDIOMA
+
+base:TXT-IDIOMA rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute IDIOMA"@en ;
+                
+                rdfs:comment "Created: 10/05/2007 11:20:27"@en ;
+                
+                rdfs:domain base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-INDISI1
+
+base:TXT-INDISI1 rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute INDISI1"@en ;
+                 
+                 rdfs:comment "Created: 12/11/2008 13:44:39"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-INDPRVAD
+
+base:TXT-INDPRVAD rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute INDPRVAD"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 13:45:37"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-INFTEXT
+
+base:TXT-INFTEXT rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute INFTEXT"@en ;
+                 
+                 rdfs:comment "Created: 12/11/2008 13:44:54"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-LINEA_DESPLIEGUE
+
+base:TXT-LINEA_DESPLIEGUE rdf:type owl:DatatypeProperty ;
+                          
+                          rdfs:label "Text Attribute LINEA_DESPLIEGUE"@en ;
+                          
+                          rdfs:comment "Created: 09/01/2009 17:11:11"@en ;
+                          
+                          rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-LOGIN_TIMESTAMP
+
+base:TXT-LOGIN_TIMESTAMP rdf:type owl:DatatypeProperty ;
+                         
+                         rdfs:label "Text Attribute LOGIN_TIMESTAMP"@en ;
+                         
+                         rdfs:comment "Timestam"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-LONCUPRO
+
+base:TXT-LONCUPRO rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute LONCUPRO"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 13:43:28"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-LONGCONC
+
+base:TXT-LONGCONC rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute LONGCONC"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 13:43:03"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-METODO
+
+base:TXT-METODO rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute METODO"@en ;
+                
+                rdfs:comment "Metodo"@en ;
+                
+                rdfs:domain base:TYPE-REPO_SQL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-NAME
+
+base:TXT-NAME rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "Text Attribute NAME"@en ;
+              
+              rdfs:comment "name"@en ;
+              
+              rdfs:domain base:TYPE-REPO_CB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-NIVEL_LOG
+
+base:TXT-NIVEL_LOG rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:label "Text Attribute NIVEL_LOG"@en ;
+                   
+                   rdfs:comment "nivel de lo"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-NOMBRE
+
+base:TXT-NOMBRE rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute NOMBRE"@en ;
+                
+                rdfs:comment "Nombre"@en ;
+                
+                rdfs:domain base:TYPE-REPO_ALN ,
+                            base:TYPE-REPO_ALP ,
+                            base:TYPE-REPO_APL2 ,
+                            base:TYPE-REPO_APLICF ,
+                            base:TYPE-REPO_APLICF_FECHA ,
+                            base:TYPE-REPO_COMP_ADAP ,
+                            base:TYPE-REPO_COMP_JAVA ,
+                            base:TYPE-REPO_COMP_SQL ,
+                            base:TYPE-REPO_CONTEX ,
+                            base:TYPE-REPO_ENS ,
+                            base:TYPE-REPO_ENTOR ,
+                            base:TYPE-REPO_ESC ,
+                            base:TYPE-REPO_EXCF ,
+                            base:TYPE-REPO_FACPRI ,
+                            base:TYPE-REPO_FACPUB ,
+                            base:TYPE-REPO_IFAC ,
+                            base:TYPE-REPO_METHCOMP ,
+                            base:TYPE-REPO_METHIFAC ,
+                            base:TYPE-REPO_MOD ,
+                            base:TYPE-REPO_MOD2 ,
+                            base:TYPE-REPO_OI ,
+                            base:TYPE-REPO_OP ,
+                            base:TYPE-REPO_PREENS ,
+                            base:TYPE-REPO_PROY ,
+                            base:TYPE-REPO_SISTEM ,
+                            base:TYPE-REPO_USUARIO ,
+                            base:TYPE-REPO_WEB ,
+                            base:TYPE-REPO_WEB_METH .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-NOMBREC
+
+base:TXT-NOMBREC rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute NOMBREC"@en ;
+                 
+                 rdfs:comment "Created: 12/11/2008 13:40:43"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_CONCEP_MULTI ,
+                             base:TYPE-REPO_TDC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-NOMBRE_CORTO
+
+base:TXT-NOMBRE_CORTO rdf:type owl:DatatypeProperty ;
+                      
+                      rdfs:label "Text Attribute NOMBRE_CORTO"@en ;
+                      
+                      rdfs:comment "NOMBRE_CORTO"@en ;
+                      
+                      rdfs:domain base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-NOMLI1
+
+base:TXT-NOMLI1 rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute NOMLI1"@en ;
+                
+                rdfs:comment "Created: 12/11/2008 14:01:54"@en ;
+                
+                rdfs:domain base:TYPE-REPO_COMPOS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-NUMORDCU
+
+base:TXT-NUMORDCU rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute NUMORDCU"@en ;
+                  
+                  rdfs:comment "Created: 12/11/2008 14:02:11"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_COMPOS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-OBLIGATORIO
+
+base:TXT-OBLIGATORIO rdf:type owl:DatatypeProperty ;
+                     
+                     rdfs:label "Text Attribute OBLIGATORIO"@en ;
+                     
+                     rdfs:comment "Obligatorio  Created: 12/14/2006 17:49:13"@en ;
+                     
+                     rdfs:domain base:TYPE-REPO_CONTEX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ORIGEN
+
+base:TXT-ORIGEN rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute ORIGEN"@en ;
+                
+                rdfs:comment "Origen del Item (ARIS, NO ARIS (Online).BATCH)"@en ;
+                
+                rdfs:domain base:TYPE-REPO_APLINF ,
+                            base:TYPE-REPO_DEFAPL ,
+                            base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PACKAGE
+
+base:TXT-PACKAGE rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute PACKAGE"@en ;
+                 
+                 rdfs:comment "Paquet"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PADRE
+
+base:TXT-PADRE rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "Text Attribute PADRE"@en ;
+               
+               rdfs:comment "PADRE"@en ;
+               
+               rdfs:domain base:TYPE-REPO_CONTEX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PAQUETE
+
+base:TXT-PAQUETE rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute PAQUETE"@en ;
+                 
+                 rdfs:comment "Paquete"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_COMP_ADAP ,
+                             base:TYPE-REPO_COMP_JAVA ,
+                             base:TYPE-REPO_COMP_SQL ,
+                             base:TYPE-REPO_IFAC .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-POSICION
+
+base:TXT-POSICION rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute POSICION"@en ;
+                  
+                  rdfs:comment "Posicion"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_CONTEX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-PSFREAL
+
+base:TXT-PSFREAL rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute PSFREAL"@en ;
+                 
+                 rdfs:comment "Created: 12/18/2008 16:33:26"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_APLICF_VERS .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-REAL
+
+base:TXT-REAL rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "Text Attribute REAL"@en ;
+              
+              rdfs:comment "Created: 12/18/2008 16:11:13"@en ;
+              
+              rdfs:domain base:TYPE-REPO_ALN ,
+                          base:TYPE-REPO_ALP ,
+                          base:TYPE-REPO_APL2 ,
+                          base:TYPE-REPO_FACPRI ,
+                          base:TYPE-REPO_FACPUB ,
+                          base:TYPE-REPO_MOD .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-ROLLBACK
+
+base:TXT-ROLLBACK rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "Text Attribute ROLLBACK"@en ;
+                  
+                  rdfs:comment "Rollback  Created: 12/14/2006 16:42:29"@en ;
+                  
+                  rdfs:domain base:TYPE-REPO_EXCF .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-SALIDA
+
+base:TXT-SALIDA rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute SALIDA"@en ;
+                
+                rdfs:comment "Salida"@en ;
+                
+                rdfs:domain base:TYPE-REPO_CONTEX .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIMESTAMP
+
+base:TXT-TIMESTAMP rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:label "Text Attribute TIMESTAMP"@en ;
+                   
+                   rdfs:comment "Created: 07/21/2008 13:53:56"@en ;
+                   
+                   rdfs:domain base:TYPE-REPO_CLIE_ENTOR_TIMEST .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIPO
+
+base:TXT-TIPO rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "Text Attribute TIPO"@en ;
+              
+              rdfs:comment "Created: 12/07/2006 09:49:03"@en ;
+              
+              rdfs:domain base:TYPE-REPO_ALN ,
+                          base:TYPE-REPO_ALP ,
+                          base:TYPE-REPO_APL2 ,
+                          base:TYPE-REPO_COMP_ADAP ,
+                          base:TYPE-REPO_COMP_JAVA ,
+                          base:TYPE-REPO_COMP_SQL ,
+                          base:TYPE-REPO_CONTEX ,
+                          base:TYPE-REPO_DOPER ,
+                          base:TYPE-REPO_FACPRI ,
+                          base:TYPE-REPO_FACPUB ,
+                          base:TYPE-REPO_MOD ,
+                          base:TYPE-REPO_MOD2 ,
+                          base:TYPE-REPO_OI ,
+                          base:TYPE-REPO_OP ,
+                          base:TYPE-REPO_PROY ,
+                          base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TIPO_SERV_TEC
+
+base:TXT-TIPO_SERV_TEC rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:label "Text Attribute TIPO_SERV_TEC"@en ;
+                       
+                       rdfs:comment "Tipo de Servicio Tecnico"@en ;
+                       
+                       rdfs:domain base:TYPE-REPO_DEFAPL .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TRX
+
+base:TXT-TRX rdf:type owl:DatatypeProperty ;
+             
+             rdfs:label "Text Attribute TRX"@en ;
+             
+             rdfs:comment "Created: 07/11/2008 13:25:24"@en ;
+             
+             rdfs:domain base:TYPE-REPO_TRXO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-TRXO
+
+base:TXT-TRXO rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "Text Attribute TRXO"@en ;
+              
+              rdfs:comment "Created: 07/11/2008 13:25:39"@en ;
+              
+              rdfs:domain base:TYPE-REPO_TRXO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-UNIDAD
+
+base:TXT-UNIDAD rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute UNIDAD"@en ;
+                
+                rdfs:comment "Unida"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-USERID
+
+base:TXT-USERID rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute USERID"@en ;
+                
+                rdfs:comment "User ID"@en ;
+                
+                rdfs:domain base:TYPE-REPO_USUARIO .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-VERSION
+
+base:TXT-VERSION rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute VERSION"@en ;
+                 
+                 rdfs:comment "Version de la Aplicación"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_ALN ,
+                             base:TYPE-REPO_ALP ,
+                             base:TYPE-REPO_APL2 ,
+                             base:TYPE-REPO_APLICF_VERS ,
+                             base:TYPE-REPO_CB ,
+                             base:TYPE-REPO_COMP_ADAP ,
+                             base:TYPE-REPO_COMP_JAVA ,
+                             base:TYPE-REPO_COMP_SQL ,
+                             base:TYPE-REPO_ENS ,
+                             base:TYPE-REPO_ESC ,
+                             base:TYPE-REPO_ESTADO_SAT ,
+                             base:TYPE-REPO_EXCF ,
+                             base:TYPE-REPO_FACPRI ,
+                             base:TYPE-REPO_FACPUB ,
+                             base:TYPE-REPO_IFAC ,
+                             base:TYPE-REPO_MOD ,
+                             base:TYPE-REPO_MOD2 ,
+                             base:TYPE-REPO_OI ,
+                             base:TYPE-REPO_OP ,
+                             base:TYPE-REPO_PREENS ,
+                             base:TYPE-REPO_PROY ,
+                             base:TYPE-REPO_WEB .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-VIGENTE
+
+base:TXT-VIGENTE rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute VIGENTE"@en ;
+                 
+                 rdfs:comment "Marca Lógica que indica si se ha dado de baja lógica el item. Valores (SI/NO)"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_APLINF ,
+                             base:TYPE-REPO_DEFAPL ,
+                             base:TYPE-REPO_SISTEM .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TXT-VISIBLE
+
+base:TXT-VISIBLE rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "Text Attribute VISIBLE"@en ;
+                 
+                 rdfs:comment "Publica/Privada"@en ;
+                 
+                 rdfs:domain base:TYPE-REPO_OI ,
+                             base:TYPE-REPO_OP .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/﻿TXT-ALIAS
+
+base:﻿TXT-ALIAS rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Text Attribute ALIAS"@en ;
+                
+                rdfs:comment "Alias del Metodo  Created: 12/14/2006 17:14:48"@en ;
+                
+                rdfs:domain base:TYPE-REPO_WEB_METH .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-AP-ITEMTYPE
+
+base:TYPE-AP-ITEMTYPE rdf:type owl:Class ;
+                      
+                      rdfs:label "AP-ITEMTYPE"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-AR_APLICACION_VERSION
+
+base:TYPE-AR_APLICACION_VERSION rdf:type owl:Class ;
+                                
+                                rdfs:label "AR_APLICACION_VERSION"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-AR_CAPA
+
+base:TYPE-AR_CAPA rdf:type owl:Class ;
+                  
+                  rdfs:label "AR_CAPA"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-AR_OPERACION
+
+base:TYPE-AR_OPERACION rdf:type owl:Class ;
+                       
+                       rdfs:label "AR_OPERACION"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-AR_SERVICIO_VERSION
+
+base:TYPE-AR_SERVICIO_VERSION rdf:type owl:Class ;
+                              
+                              rdfs:label "AR_SERVICIO_VERSION"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-AR_SINONIMO
+
+base:TYPE-AR_SINONIMO rdf:type owl:Class ;
+                      
+                      rdfs:label "AR_SINONIMO"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-AR_SISTEMA
+
+base:TYPE-AR_SISTEMA rdf:type owl:Class ;
+                     
+                     rdfs:label "AR_SISTEMA"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-AR_VISION
+
+base:TYPE-AR_VISION rdf:type owl:Class ;
+                    
+                    rdfs:label "AR_VISION"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-BH_BHTC
+
+base:TYPE-BH_BHTC rdf:type owl:Class ;
+                  
+                  rdfs:label "BH_BHTC"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_CLIE_LIN
+
+base:TYPE-H_REPO_CLIE_LIN rdf:type owl:Class ;
+                          
+                          rdfs:label "H_REPO_CLIE_LIN"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_CLIE_LIN_ENTOR
+
+base:TYPE-H_REPO_CLIE_LIN_ENTOR rdf:type owl:Class ;
+                                
+                                rdfs:label "H_REPO_CLIE_LIN_ENTOR"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_DMSJ
+
+base:TYPE-H_REPO_DMSJ rdf:type owl:Class ;
+                      
+                      rdfs:label "H_REPO_DMSJ"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_DTRX
+
+base:TYPE-H_REPO_DTRX rdf:type owl:Class ;
+                      
+                      rdfs:label "H_REPO_DTRX"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_LIN
+
+base:TYPE-H_REPO_LIN rdf:type owl:Class ;
+                     
+                     rdfs:label "H_REPO_LIN"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_LIN_ENTOR
+
+base:TYPE-H_REPO_LIN_ENTOR rdf:type owl:Class ;
+                           
+                           rdfs:label "H_REPO_LIN_ENTOR"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_LOC
+
+base:TYPE-H_REPO_LOC rdf:type owl:Class ;
+                     
+                     rdfs:label "H_REPO_LOC"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_MTI
+
+base:TYPE-H_REPO_MTI rdf:type owl:Class ;
+                     
+                     rdfs:label "H_REPO_MTI"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-H_REPO_MTJ
+
+base:TYPE-H_REPO_MTJ rdf:type owl:Class ;
+                     
+                     rdfs:label "H_REPO_MTJ"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-ISB_ESTADOS
+
+base:TYPE-ISB_ESTADOS rdf:type owl:Class ;
+                      
+                      rdfs:label "ISB_ESTADOS"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ACTIVO
+
+base:TYPE-REPO_ACTIVO rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_ACTIVO"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ALIAS
+
+base:TYPE-REPO_ALIAS rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_ALIAS"@en ;
+                     
+                     rdfs:comment "Alias"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ALN
+
+base:TYPE-REPO_ALN rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_ALN"@en ;
+                   
+                   rdfs:comment "Aplicacion BKS LN"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ALP
+
+base:TYPE-REPO_ALP rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_ALP"@en ;
+                   
+                   rdfs:comment "Aplicacion BKS LP"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_APL2
+
+base:TYPE-REPO_APL2 rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_APL2"@en ;
+                    
+                    rdfs:comment "Aplicacion BKS 2"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_APLBKS
+
+base:TYPE-REPO_APLBKS rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_APLBKS"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_APLICF
+
+base:TYPE-REPO_APLICF rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_APLICF"@en ;
+                      
+                      rdfs:comment "Aplicacion Funcional (Thomas)"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_APLICF_FECHA
+
+base:TYPE-REPO_APLICF_FECHA rdf:type owl:Class ;
+                            
+                            rdfs:label "REPO_APLICF_FECHA"@en ;
+                            
+                            rdfs:comment "Aplicacion Funcional (Thomas) - Fecha"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_APLICF_VERS
+
+base:TYPE-REPO_APLICF_VERS rdf:type owl:Class ;
+                           
+                           rdfs:label "REPO_APLICF_VERS"@en ;
+                           
+                           rdfs:comment "Aplicacion Funcional - Version (Thomas)"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_APLINF
+
+base:TYPE-REPO_APLINF rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_APLINF"@en ;
+                      
+                      rdfs:comment "Aplicacion Informatica"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_AREA
+
+base:TYPE-REPO_AREA rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_AREA"@en ;
+                    
+                    rdfs:comment "Area"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_CB
+
+base:TYPE-REPO_CB rdf:type owl:Class ;
+                  
+                  rdfs:label "REPO_CB"@en ;
+                  
+                  rdfs:comment "ContexBeen"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_CLIE
+
+base:TYPE-REPO_CLIE rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_CLIE"@en ;
+                    
+                    rdfs:comment "Cliente"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_CLIE_ENTOR
+
+base:TYPE-REPO_CLIE_ENTOR rdf:type owl:Class ;
+                          
+                          rdfs:label "REPO_CLIE_ENTOR"@en ;
+                          
+                          rdfs:comment "Cliente_Entorno"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_CLIE_ENTOR_TIMEST
+
+base:TYPE-REPO_CLIE_ENTOR_TIMEST rdf:type owl:Class ;
+                                 
+                                 rdfs:label "REPO_CLIE_ENTOR_TIMEST"@en ;
+                                 
+                                 rdfs:comment "Tiemstap entorno y cliente"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_CLIE_FECHA_ENV
+
+base:TYPE-REPO_CLIE_FECHA_ENV rdf:type owl:Class ;
+                              
+                              rdfs:label "REPO_CLIE_FECHA_ENV"@en ;
+                              
+                              rdfs:comment "Fecha Envio a Cliente"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_COMPOS
+
+base:TYPE-REPO_COMPOS rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_COMPOS"@en ;
+                      
+                      rdfs:comment "Composicion"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_COMP_ADAP
+
+base:TYPE-REPO_COMP_ADAP rdf:type owl:Class ;
+                         
+                         rdfs:label "REPO_COMP_ADAP"@en ;
+                         
+                         rdfs:comment "Componente Adapter"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_COMP_JAVA
+
+base:TYPE-REPO_COMP_JAVA rdf:type owl:Class ;
+                         
+                         rdfs:label "REPO_COMP_JAVA"@en ;
+                         
+                         rdfs:comment "Componente Java"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_COMP_SQL
+
+base:TYPE-REPO_COMP_SQL rdf:type owl:Class ;
+                        
+                        rdfs:label "REPO_COMP_SQL"@en ;
+                        
+                        rdfs:comment "Componente SQL"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_CONCEP_MULTI
+
+base:TYPE-REPO_CONCEP_MULTI rdf:type owl:Class ;
+                            
+                            rdfs:label "REPO_CONCEP_MULTI"@en ;
+                            
+                            rdfs:comment "Concepto Multiidioma"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_CONTEX
+
+base:TYPE-REPO_CONTEX rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_CONTEX"@en ;
+                      
+                      rdfs:comment "Contextos"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_CTX
+
+base:TYPE-REPO_CTX rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_CTX"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DALN
+
+base:TYPE-REPO_DALN rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_DALN"@en ;
+                    
+                    rdfs:comment "Definicion Aplicacion BKS (ALN)"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DALP
+
+base:TYPE-REPO_DALP rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_DALP"@en ;
+                    
+                    rdfs:comment "Definicion Aplicacion BKS (ALP)"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DAPL2
+
+base:TYPE-REPO_DAPL2 rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_DAPL2"@en ;
+                     
+                     rdfs:comment "Definicion Aplicacion BKS 2"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DCOMP_ADAP
+
+base:TYPE-REPO_DCOMP_ADAP rdf:type owl:Class ;
+                          
+                          rdfs:label "REPO_DCOMP_ADAP"@en ;
+                          
+                          rdfs:comment "Definicion Componente appAdapter"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DCOMP_JAVA
+
+base:TYPE-REPO_DCOMP_JAVA rdf:type owl:Class ;
+                          
+                          rdfs:label "REPO_DCOMP_JAVA"@en ;
+                          
+                          rdfs:comment "Definicion Componente Java"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DCOMP_SQL
+
+base:TYPE-REPO_DCOMP_SQL rdf:type owl:Class ;
+                         
+                         rdfs:label "REPO_DCOMP_SQL"@en ;
+                         
+                         rdfs:comment "Definicion Componente SQL"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DEFAPL
+
+base:TYPE-REPO_DEFAPL rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_DEFAPL"@en ;
+                      
+                      rdfs:comment "Servicio"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DENS
+
+base:TYPE-REPO_DENS rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_DENS"@en ;
+                    
+                    rdfs:comment "Definicion Ensamblados"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DESC
+
+base:TYPE-REPO_DESC rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_DESC"@en ;
+                    
+                    rdfs:comment "Definicion Escenario"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DFAC_PRI
+
+base:TYPE-REPO_DFAC_PRI rdf:type owl:Class ;
+                        
+                        rdfs:label "REPO_DFAC_PRI"@en ;
+                        
+                        rdfs:comment "Definicion Fachadas Privadas"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DFAC_PUB
+
+base:TYPE-REPO_DFAC_PUB rdf:type owl:Class ;
+                        
+                        rdfs:label "REPO_DFAC_PUB"@en ;
+                        
+                        rdfs:comment "Definicion Fachadas Publicas"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DIFAC
+
+base:TYPE-REPO_DIFAC rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_DIFAC"@en ;
+                     
+                     rdfs:comment "Definicion Interfaz de Fachada"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DMLN
+
+base:TYPE-REPO_DMLN rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_DMLN"@en ;
+                    
+                    rdfs:comment "Definicion MLN"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DMLP
+
+base:TYPE-REPO_DMLP rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_DMLP"@en ;
+                    
+                    rdfs:comment "Definicion MLP"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DOPER
+
+base:TYPE-REPO_DOPER rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_DOPER"@en ;
+                     
+                     rdfs:comment "Definicion Operacion"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DPROY
+
+base:TYPE-REPO_DPROY rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_DPROY"@en ;
+                     
+                     rdfs:comment "Definicion Proyecto Fachada"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_DWEB
+
+base:TYPE-REPO_DWEB rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_DWEB"@en ;
+                    
+                    rdfs:comment "Definicion Adaptador WEB"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ENS
+
+base:TYPE-REPO_ENS rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_ENS"@en ;
+                   
+                   rdfs:comment "Ensamblados"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ENS_METH
+
+base:TYPE-REPO_ENS_METH rdf:type owl:Class ;
+                        
+                        rdfs:label "REPO_ENS_METH"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ENTOR
+
+base:TYPE-REPO_ENTOR rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_ENTOR"@en ;
+                     
+                     rdfs:comment "Entorno"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ESC
+
+base:TYPE-REPO_ESC rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_ESC"@en ;
+                   
+                   rdfs:comment "Escenario"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ESTADO_OI
+
+base:TYPE-REPO_ESTADO_OI rdf:type owl:Class ;
+                         
+                         rdfs:label "REPO_ESTADO_OI"@en ;
+                         
+                         rdfs:comment "Estado_OI"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ESTADO_OP
+
+base:TYPE-REPO_ESTADO_OP rdf:type owl:Class ;
+                         
+                         rdfs:label "REPO_ESTADO_OP"@en ;
+                         
+                         rdfs:comment "Estado_OP"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ESTADO_SAT
+
+base:TYPE-REPO_ESTADO_SAT rdf:type owl:Class ;
+                          
+                          rdfs:label "REPO_ESTADO_SAT"@en ;
+                          
+                          rdfs:comment "Estado SAT"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ESTADO_TRXO
+
+base:TYPE-REPO_ESTADO_TRXO rdf:type owl:Class ;
+                           
+                           rdfs:label "REPO_ESTADO_TRXO"@en ;
+                           
+                           rdfs:comment "Estado TRXO"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_ESTADO_WEB
+
+base:TYPE-REPO_ESTADO_WEB rdf:type owl:Class ;
+                          
+                          rdfs:label "REPO_ESTADO_WEB"@en ;
+                          
+                          rdfs:comment "Estado_web"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_EXCF
+
+base:TYPE-REPO_EXCF rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_EXCF"@en ;
+                    
+                    rdfs:comment "Excepciones Funcionales"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_FACPRI
+
+base:TYPE-REPO_FACPRI rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_FACPRI"@en ;
+                      
+                      rdfs:comment "Fachada Privada"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_FACPUB
+
+base:TYPE-REPO_FACPUB rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_FACPUB"@en ;
+                      
+                      rdfs:comment "Fachada Publica"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_IFAC
+
+base:TYPE-REPO_IFAC rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_IFAC"@en ;
+                    
+                    rdfs:comment "Interfaz de Fachada"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_METHCOMP
+
+base:TYPE-REPO_METHCOMP rdf:type owl:Class ;
+                        
+                        rdfs:label "REPO_METHCOMP"@en ;
+                        
+                        rdfs:comment "Metodo de Componente"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_METHIFAC
+
+base:TYPE-REPO_METHIFAC rdf:type owl:Class ;
+                        
+                        rdfs:label "REPO_METHIFAC"@en ;
+                        
+                        rdfs:comment "Metodo IFAC"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_MOD
+
+base:TYPE-REPO_MOD rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_MOD"@en ;
+                   
+                   rdfs:comment "Modulos LN"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_MOD2
+
+base:TYPE-REPO_MOD2 rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_MOD2"@en ;
+                    
+                    rdfs:comment "Modulos LP"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_OI
+
+base:TYPE-REPO_OI rdf:type owl:Class ;
+                  
+                  rdfs:label "REPO_OI"@en ;
+                  
+                  rdfs:comment "Operacion Interna"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_OP
+
+base:TYPE-REPO_OP rdf:type owl:Class ;
+                  
+                  rdfs:label "REPO_OP"@en ;
+                  
+                  rdfs:comment "Operacion Presentación"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_OPER
+
+base:TYPE-REPO_OPER rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_OPER"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_PARA
+
+base:TYPE-REPO_PARA rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_PARA"@en ;
+                    
+                    rdfs:comment "Parametros"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_PARAM
+
+base:TYPE-REPO_PARAM rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_PARAM"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_PREENS
+
+base:TYPE-REPO_PREENS rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_PREENS"@en ;
+                      
+                      rdfs:comment "Pre-Ensamblados"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_PROTOCOLO
+
+base:TYPE-REPO_PROTOCOLO rdf:type owl:Class ;
+                         
+                         rdfs:label "REPO_PROTOCOLO"@en ;
+                         
+                         rdfs:comment "Protocolo"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_PROY
+
+base:TYPE-REPO_PROY rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_PROY"@en ;
+                    
+                    rdfs:comment "Proyecto"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_SISTEM
+
+base:TYPE-REPO_SISTEM rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_SISTEM"@en ;
+                      
+                      rdfs:comment "SubSistema"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_SQL
+
+base:TYPE-REPO_SQL rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_SQL"@en ;
+                   
+                   rdfs:comment "Consultas que usan los Componentes SQL"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_TDC
+
+base:TYPE-REPO_TDC rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_TDC"@en ;
+                   
+                   rdfs:comment "TDC"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_TIPD
+
+base:TYPE-REPO_TIPD rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_TIPD"@en ;
+                    
+                    rdfs:comment "Tipo de Dato"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_TIPDL
+
+base:TYPE-REPO_TIPDL rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_TIPDL"@en ;
+                     
+                     rdfs:comment "Tipo Dato Logico"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_TIPDMF
+
+base:TYPE-REPO_TIPDMF rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_TIPDMF"@en ;
+                      
+                      rdfs:comment "Tipo Dato Modelo Fisico"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_TIPDML
+
+base:TYPE-REPO_TIPDML rdf:type owl:Class ;
+                      
+                      rdfs:label "REPO_TIPDML"@en ;
+                      
+                      rdfs:comment "Tipo Dato Modelo Logico"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_TRANS
+
+base:TYPE-REPO_TRANS rdf:type owl:Class ;
+                     
+                     rdfs:label "REPO_TRANS"@en ;
+                     
+                     rdfs:comment "Transporte"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_TRX
+
+base:TYPE-REPO_TRX rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_TRX"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_TRXO
+
+base:TYPE-REPO_TRXO rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_TRXO"@en ;
+                    
+                    rdfs:comment "Transaccion_operacion"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_USUARIO
+
+base:TYPE-REPO_USUARIO rdf:type owl:Class ;
+                       
+                       rdfs:label "REPO_USUARIO"@en ;
+                       
+                       rdfs:comment "Usuario"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_WEB
+
+base:TYPE-REPO_WEB rdf:type owl:Class ;
+                   
+                   rdfs:label "REPO_WEB"@en ;
+                   
+                   rdfs:comment "Adaptador de Canal"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_WEB_METH
+
+base:TYPE-REPO_WEB_METH rdf:type owl:Class ;
+                        
+                        rdfs:label "REPO_WEB_METH"@en ;
+                        
+                        rdfs:comment "Adaptador Web / Metodos referenciados"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/TYPE-REPO_WSDL
+
+base:TYPE-REPO_WSDL rdf:type owl:Class ;
+                    
+                    rdfs:label "REPO_WSDL"@en ;
+                    
+                    rdfs:comment "WSDL"@en .
+
+
+
+###  http://es.upm.atlas/atlas_ontology/﻿TYPE-REPO_ACTIVO
+
+base:﻿TYPE-REPO_ACTIVO rdf:type owl:Class ;
+                       
+                       rdfs:label "REPO_ACTIVO"@en ;
+                       
+                       rdfs:comment "Activo"@en .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

@@ -33,7 +33,8 @@ base:TXT-ALN--CLIE_ENTOR
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR .
 
 base:TYPE-REPO_DMLN  a  owl:Class ;
-        rdfs:label  "REPO_DMLN"@en .
+        rdfs:comment  "Definicion MLN"@en ;
+        rdfs:label    "REPO_DMLN"@en .
 
 base:TXT-SUBSISTEMA--APLICACION_VERSION
         a             owl:ObjectProperty ;
@@ -124,11 +125,13 @@ base:TXT-OPER---ESTADO_TRXO
         rdfs:range    base:TYPE-REPO_ESTADO_TRXO .
 
 base:TYPE-REPO_CLIE_FECHA_ENV
-        a           owl:Class ;
-        rdfs:label  "REPO_CLIE_FECHA_ENV"@en .
+        a             owl:Class ;
+        rdfs:comment  "Fecha Envio a Cliente"@en ;
+        rdfs:label    "REPO_CLIE_FECHA_ENV"@en .
 
 base:TYPE-REPO_DESC  a  owl:Class ;
-        rdfs:label  "REPO_DESC"@en .
+        rdfs:comment  "Definicion Escenario"@en ;
+        rdfs:label    "REPO_DESC"@en .
 
 base:TXT-ESTADO_OP---DALP
         a             owl:ObjectProperty ;
@@ -148,12 +151,13 @@ base:TXT-EXCF---MOD  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_MOD .
 
 base:TYPE-REPO_WEB_METH
-        a           owl:Class ;
-        rdfs:label  "REPO_WEB_METH"@en .
+        a             owl:Class ;
+        rdfs:comment  "Adaptador Web / Metodos referenciados"@en ;
+        rdfs:label    "REPO_WEB_METH"@en .
 
 base:TXT-SERVICIO--SERVICIO_VERSION
         a             owl:ObjectProperty ;
-        rdfs:comment  "Servicio funcional -&gt"@en ;
+        rdfs:comment  "Servicio funcional ->Servicio funcional versión"@en ;
         rdfs:domain   base:TYPE-REPO_DEFAPL ;
         rdfs:label    "Link Attribute SERVICIO--SERVICIO_VERSION"@en ;
         rdfs:range    base:TYPE-AR_SERVICIO_VERSION .
@@ -192,8 +196,9 @@ base:TXT-FECHA  a     owl:DatatypeProperty ;
         rdfs:label    "Text Attribute FECHA"@en .
 
 base:TYPE-REPO_PREENS
-        a           owl:Class ;
-        rdfs:label  "REPO_PREENS"@en .
+        a             owl:Class ;
+        rdfs:comment  "Pre-Ensamblados"@en ;
+        rdfs:label    "REPO_PREENS"@en .
 
 base:TYPE-REPO_OPER  a  owl:Class ;
         rdfs:label  "REPO_OPER"@en .
@@ -221,8 +226,9 @@ base:TXT-CODATO  a    owl:DatatypeProperty ;
         rdfs:label    "Text Attribute CODATO"@en .
 
 base:TYPE-REPO_FACPUB
-        a           owl:Class ;
-        rdfs:label  "REPO_FACPUB"@en .
+        a             owl:Class ;
+        rdfs:comment  "Fachada Publica"@en ;
+        rdfs:label    "REPO_FACPUB"@en .
 
 base:TXT-TRXO---TRX  a  owl:ObjectProperty ;
         rdfs:comment  "Created: 01/19/2009 16:25:50"@en ;
@@ -244,10 +250,12 @@ base:TXT-ESTADO_SAT--MTJ
         rdfs:range    base:TYPE-H_REPO_MTJ .
 
 base:TYPE-REPO_MOD2  a  owl:Class ;
-        rdfs:label  "REPO_MOD2"@en .
+        rdfs:comment  "Modulos LP"@en ;
+        rdfs:label    "REPO_MOD2"@en .
 
 base:TYPE-REPO_CB  a  owl:Class ;
-        rdfs:label  "REPO_CB"@en .
+        rdfs:comment  "ContexBeen"@en ;
+        rdfs:label    "REPO_CB"@en .
 
 base:TXT-ESC---APL2  a  owl:ObjectProperty ;
         rdfs:comment  "Created: 01/16/2009 12:18:24"@en ;
@@ -308,11 +316,13 @@ base:TXT-COMP---PARAM
         rdfs:range    base:TYPE-REPO_PARAM .
 
 base:TYPE-REPO_DCOMP_SQL
-        a           owl:Class ;
-        rdfs:label  "REPO_DCOMP_SQL"@en .
+        a             owl:Class ;
+        rdfs:comment  "Definicion Componente SQL"@en ;
+        rdfs:label    "REPO_DCOMP_SQL"@en .
 
 base:TYPE-REPO_DALN  a  owl:Class ;
-        rdfs:label  "REPO_DALN"@en .
+        rdfs:comment  "Definicion Aplicacion BKS (ALN)"@en ;
+        rdfs:label    "REPO_DALN"@en .
 
 base:TXT-POSICION  a  owl:DatatypeProperty ;
         rdfs:comment  "Posicion"@en ;
@@ -358,7 +368,7 @@ base:TXT-TIPDML---TIPDL
 
 base:TXT-APLICACION--APLICACION_VERSION
         a             owl:ObjectProperty ;
-        rdfs:comment  "Aplicación -&gt"@en ;
+        rdfs:comment  "Aplicación ->Aplicación versión"@en ;
         rdfs:domain   base:TYPE-REPO_APLINF ;
         rdfs:label    "Link Attribute APLICACION--APLICACION_VERSION"@en ;
         rdfs:range    base:TYPE-AR_APLICACION_VERSION .
@@ -417,7 +427,8 @@ base:TXT-APL---OI  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_OI , base:TYPE-REPO_OPER .
 
 base:TYPE-REPO_APL2  a  owl:Class ;
-        rdfs:label  "REPO_APL2"@en .
+        rdfs:comment  "Aplicacion BKS 2"@en ;
+        rdfs:label    "REPO_APL2"@en .
 
 base:TXT-ENS---MOD  a  owl:ObjectProperty ;
         rdfs:comment  "Created: 09/02/2008 16:53:47"@en ;
@@ -451,8 +462,9 @@ base:TXT-NAME  a      owl:DatatypeProperty ;
         rdfs:label    "Text Attribute NAME"@en .
 
 base:TYPE-REPO_APLICF_FECHA
-        a           owl:Class ;
-        rdfs:label  "REPO_APLICF_FECHA"@en .
+        a             owl:Class ;
+        rdfs:comment  "Aplicacion Funcional (Thomas) - Fecha"@en ;
+        rdfs:label    "REPO_APLICF_FECHA"@en .
 
 base:TXT-TIPD---OI  a  owl:ObjectProperty ;
         rdfs:comment  "Created: 04/21/2010 17:13:33"@en ;
@@ -513,11 +525,13 @@ base:TXT-APLICF_FECHA--ALP
         rdfs:range    base:TYPE-REPO_ALP .
 
 base:TYPE-REPO_DEFAPL
-        a           owl:Class ;
-        rdfs:label  "REPO_DEFAPL"@en .
+        a             owl:Class ;
+        rdfs:comment  "Servicio"@en ;
+        rdfs:label    "REPO_DEFAPL"@en .
 
 base:TYPE-REPO_SQL  a  owl:Class ;
-        rdfs:label  "REPO_SQL"@en .
+        rdfs:comment  "Consultas que usan los Componentes SQL"@en ;
+        rdfs:label    "REPO_SQL"@en .
 
 base:TXT-CLIE_ENTOR--CLIE
         a            owl:ObjectProperty ;
@@ -542,20 +556,24 @@ base:TYPE-H_REPO_LIN  a  owl:Class ;
         rdfs:label  "H_REPO_LIN"@en .
 
 base:TYPE-REPO_CLIE_ENTOR_TIMEST
-        a           owl:Class ;
-        rdfs:label  "REPO_CLIE_ENTOR_TIMEST"@en .
+        a             owl:Class ;
+        rdfs:comment  "Tiemstap entorno y cliente"@en ;
+        rdfs:label    "REPO_CLIE_ENTOR_TIMEST"@en .
 
 base:TYPE-REPO_APLICF
-        a           owl:Class ;
-        rdfs:label  "REPO_APLICF"@en .
+        a             owl:Class ;
+        rdfs:comment  "Aplicacion Funcional (Thomas)"@en ;
+        rdfs:label    "REPO_APLICF"@en .
 
 base:TYPE-REPO_APLICF_VERS
-        a           owl:Class ;
-        rdfs:label  "REPO_APLICF_VERS"@en .
+        a             owl:Class ;
+        rdfs:comment  "Aplicacion Funcional - Version (Thomas)"@en ;
+        rdfs:label    "REPO_APLICF_VERS"@en .
 
 base:TYPE-REPO_TIPDMF
-        a           owl:Class ;
-        rdfs:label  "REPO_TIPDMF"@en .
+        a             owl:Class ;
+        rdfs:comment  "Tipo Dato Modelo Fisico"@en ;
+        rdfs:label    "REPO_TIPDMF"@en .
 
 base:TYPE-AP-ITEMTYPE
         a           owl:Class ;
@@ -612,8 +630,9 @@ base:TXT-APLICF_VERS--APLICF_VERS
         rdfs:range    base:TYPE-REPO_APLICF_VERS .
 
 base:TYPE-REPO_ESTADO_WEB
-        a           owl:Class ;
-        rdfs:label  "REPO_ESTADO_WEB"@en .
+        a             owl:Class ;
+        rdfs:comment  "Estado_web"@en ;
+        rdfs:label    "REPO_ESTADO_WEB"@en .
 
 base:TXT-EMAIL  a     owl:DatatypeProperty ;
         rdfs:comment  "Email"@en ;
@@ -647,7 +666,8 @@ base:TXT-ESTADO_TRXO--DTRX
         rdfs:range    base:TYPE-H_REPO_DTRX .
 
 base:TYPE-REPO_TRANS  a  owl:Class ;
-        rdfs:label  "REPO_TRANS"@en .
+        rdfs:comment  "Transporte"@en ;
+        rdfs:label    "REPO_TRANS"@en .
 
 base:TXT-ESTADO_OI---DALN
         a             owl:ObjectProperty ;
@@ -657,7 +677,8 @@ base:TXT-ESTADO_OI---DALN
         rdfs:range    base:TYPE-REPO_DALN .
 
 base:TYPE-REPO_ALP  a  owl:Class ;
-        rdfs:label  "REPO_ALP"@en .
+        rdfs:comment  "Aplicacion BKS LP"@en ;
+        rdfs:label    "REPO_ALP"@en .
 
 base:TXT-FAC---IFAC  a  owl:ObjectProperty ;
         rdfs:comment  "Relacion con Interfaz de Fachada"@en ;
@@ -685,7 +706,8 @@ base:TXT-FACPUB--TIMESTAMP
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR_TIMEST .
 
 base:TYPE-REPO_ALIAS  a  owl:Class ;
-        rdfs:label  "REPO_ALIAS"@en .
+        rdfs:comment  "Alias"@en ;
+        rdfs:label    "REPO_ALIAS"@en .
 
 base:TXT-COMP---CLIE_ENTOR
         a             owl:ObjectProperty ;
@@ -695,8 +717,9 @@ base:TXT-COMP---CLIE_ENTOR
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR .
 
 base:TYPE-REPO_COMP_SQL
-        a           owl:Class ;
-        rdfs:label  "REPO_COMP_SQL"@en .
+        a             owl:Class ;
+        rdfs:comment  "Componente SQL"@en ;
+        rdfs:label    "REPO_COMP_SQL"@en .
 
 base:TXT-EXCLUSIV  a  owl:DatatypeProperty ;
         rdfs:comment  "Created: 12/11/2008 13:45:20"@en ;
@@ -723,16 +746,19 @@ base:TXT-APLICF_VERS---PREENS
         rdfs:range    base:TYPE-REPO_PREENS .
 
 base:TYPE-REPO_COMP_ADAP
-        a           owl:Class ;
-        rdfs:label  "REPO_COMP_ADAP"@en .
+        a             owl:Class ;
+        rdfs:comment  "Componente Adapter"@en ;
+        rdfs:label    "REPO_COMP_ADAP"@en .
 
 base:TYPE-REPO_CONTEX
-        a           owl:Class ;
-        rdfs:label  "REPO_CONTEX"@en .
+        a             owl:Class ;
+        rdfs:comment  "Contextos"@en ;
+        rdfs:label    "REPO_CONTEX"@en .
 
 base:TYPE-REPO_CLIE_ENTOR
-        a           owl:Class ;
-        rdfs:label  "REPO_CLIE_ENTOR"@en .
+        a             owl:Class ;
+        rdfs:comment  "Cliente_Entorno"@en ;
+        rdfs:label    "REPO_CLIE_ENTOR"@en .
 
 base:TXT-APLICACION--USUARIO
         a             owl:ObjectProperty ;
@@ -752,8 +778,9 @@ base:TYPE-AR_SERVICIO_VERSION
         rdfs:label  "AR_SERVICIO_VERSION"@en .
 
 base:TYPE-REPO_TIPDML
-        a           owl:Class ;
-        rdfs:label  "REPO_TIPDML"@en .
+        a             owl:Class ;
+        rdfs:comment  "Tipo Dato Modelo Logico"@en ;
+        rdfs:label    "REPO_TIPDML"@en .
 
 base:TXT-DOPER---OP  a  owl:ObjectProperty ;
         rdfs:comment  "Created: 02/18/2009 11:10:26"@en ;
@@ -767,7 +794,8 @@ base:TXT-CLAVE  a     owl:DatatypeProperty ;
         rdfs:label    "Text Attribute CLAVE"@en .
 
 base:TYPE-REPO_OI  a  owl:Class ;
-        rdfs:label  "REPO_OI"@en .
+        rdfs:comment  "Operacion Interna"@en ;
+        rdfs:label    "REPO_OI"@en .
 
 base:TXT-TIPD---CTX  a  owl:ObjectProperty ;
         rdfs:comment  "Created: 05/28/2008 10:12:27"@en ;
@@ -800,7 +828,8 @@ base:TXT-APLIC_FECHA---APLICF
         rdfs:range    base:TYPE-REPO_APLICF .
 
 base:TYPE-REPO_TRXO  a  owl:Class ;
-        rdfs:label  "REPO_TRXO"@en .
+        rdfs:comment  "Transaccion_operacion"@en ;
+        rdfs:label    "REPO_TRXO"@en .
 
 base:TXT-APL---FACPUB
         a             owl:ObjectProperty ;
@@ -810,8 +839,9 @@ base:TXT-APL---FACPUB
         rdfs:range    base:TYPE-REPO_FACPUB .
 
 base:TYPE-REPO_FACPRI
-        a           owl:Class ;
-        rdfs:label  "REPO_FACPRI"@en .
+        a             owl:Class ;
+        rdfs:comment  "Fachada Privada"@en ;
+        rdfs:label    "REPO_FACPRI"@en .
 
 base:TXT-LINEA_DESPLIEGUE
         a             owl:DatatypeProperty ;
@@ -830,7 +860,8 @@ base:TXT-SERVICIO--APLICACION
         rdfs:range    base:TYPE-REPO_APLINF .
 
 base:TYPE-REPO_DMLP  a  owl:Class ;
-        rdfs:label  "REPO_DMLP"@en .
+        rdfs:comment  "Definicion MLP"@en ;
+        rdfs:label    "REPO_DMLP"@en .
 
 base:TXT-ALP--TIMESTAMP
         a             owl:ObjectProperty ;
@@ -840,11 +871,13 @@ base:TXT-ALP--TIMESTAMP
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR_TIMEST .
 
 base:TYPE-REPO_ESTADO_TRXO
-        a           owl:Class ;
-        rdfs:label  "REPO_ESTADO_TRXO"@en .
+        a             owl:Class ;
+        rdfs:comment  "Estado TRXO"@en ;
+        rdfs:label    "REPO_ESTADO_TRXO"@en .
 
 base:TYPE-REPO_TIPDL  a  owl:Class ;
-        rdfs:label  "REPO_TIPDL"@en .
+        rdfs:comment  "Tipo Dato Logico"@en ;
+        rdfs:label    "REPO_TIPDL"@en .
 
 base:TXT-DPROY---PROY
         a             owl:ObjectProperty ;
@@ -887,7 +920,8 @@ base:TXT-CONSULTA  a  owl:DatatypeProperty ;
         rdfs:label    "Text Attribute CONSULTA"@en .
 
 base:TYPE-REPO_AREA  a  owl:Class ;
-        rdfs:label  "REPO_AREA"@en .
+        rdfs:comment  "Area"@en ;
+        rdfs:label    "REPO_AREA"@en .
 
 base:TXT-ESTADO_OP---DAPL2
         a             owl:ObjectProperty ;
@@ -908,8 +942,9 @@ base:TXT-DESC---ESC  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_ESC .
 
 base:TYPE-REPO_COMP_JAVA
-        a           owl:Class ;
-        rdfs:label  "REPO_COMP_JAVA"@en .
+        a             owl:Class ;
+        rdfs:comment  "Componente Java"@en ;
+        rdfs:label    "REPO_COMP_JAVA"@en .
 
 base:TXT-NIVEL_LOG  a  owl:DatatypeProperty ;
         rdfs:comment  "nivel de lo"@en ;
@@ -950,8 +985,9 @@ base:TXT-APLICF---USURESP
         rdfs:range    base:TYPE-REPO_USUARIO .
 
 base:TYPE-REPO_DCOMP_ADAP
-        a           owl:Class ;
-        rdfs:label  "REPO_DCOMP_ADAP"@en .
+        a             owl:Class ;
+        rdfs:comment  "Definicion Componente appAdapter"@en ;
+        rdfs:label    "REPO_DCOMP_ADAP"@en .
 
 base:TXT-APL---OP  a  owl:ObjectProperty ;
         rdfs:comment  "Created: 01/15/2009 13:24:52"@en ;
@@ -1010,7 +1046,8 @@ base:TXT-IDIOMA  a    owl:DatatypeProperty ;
         rdfs:label    "Text Attribute IDIOMA"@en .
 
 base:TYPE-REPO_ENS  a  owl:Class ;
-        rdfs:label  "REPO_ENS"@en .
+        rdfs:comment  "Ensamblados"@en ;
+        rdfs:label    "REPO_ENS"@en .
 
 base:TXT-FORMATO  a   owl:DatatypeProperty ;
         rdfs:comment  "Created: 12/11/2008 13:53:55"@en ;
@@ -1031,7 +1068,8 @@ base:TXT-TIPD---OP  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_OP .
 
 base:TYPE-REPO_DALP  a  owl:Class ;
-        rdfs:label  "REPO_DALP"@en .
+        rdfs:comment  "Definicion Aplicacion BKS (ALP)"@en ;
+        rdfs:label    "REPO_DALP"@en .
 
 base:TXT-AREA--CAPA  a  owl:ObjectProperty ;
         rdfs:comment  "Capa"@en ;
@@ -1101,8 +1139,9 @@ base:TYPE-AR_SINONIMO
         rdfs:label  "AR_SINONIMO"@en .
 
 base:TYPE-REPO_DCOMP_JAVA
-        a           owl:Class ;
-        rdfs:label  "REPO_DCOMP_JAVA"@en .
+        a             owl:Class ;
+        rdfs:comment  "Definicion Componente Java"@en ;
+        rdfs:label    "REPO_DCOMP_JAVA"@en .
 
 <http://es.upm.atlas/atlas_ontology/﻿TXT-ALIAS>
         a             owl:DatatypeProperty ;
@@ -1118,22 +1157,26 @@ base:TXT-USUARIO--AREA
         rdfs:range    base:TYPE-REPO_AREA .
 
 base:TYPE-REPO_TDC  a  owl:Class ;
-        rdfs:label  "REPO_TDC"@en .
+        rdfs:comment  "TDC"@en ;
+        rdfs:label    "REPO_TDC"@en .
 
 base:TYPE-REPO_METHIFAC
-        a           owl:Class ;
-        rdfs:label  "REPO_METHIFAC"@en .
+        a             owl:Class ;
+        rdfs:comment  "Metodo IFAC"@en ;
+        rdfs:label    "REPO_METHIFAC"@en .
 
 base:TXT-PACKAGE  a   owl:DatatypeProperty ;
         rdfs:comment  "Paquet"@en ;
         rdfs:label    "Text Attribute PACKAGE"@en .
 
 base:TYPE-REPO_DIFAC  a  owl:Class ;
-        rdfs:label  "REPO_DIFAC"@en .
+        rdfs:comment  "Definicion Interfaz de Fachada"@en ;
+        rdfs:label    "REPO_DIFAC"@en .
 
 base:TYPE-REPO_APLINF
-        a           owl:Class ;
-        rdfs:label  "REPO_APLINF"@en .
+        a             owl:Class ;
+        rdfs:comment  "Aplicacion Informatica"@en ;
+        rdfs:label    "REPO_APLINF"@en .
 
 base:TXT-TIMESTAMP--LIN
         a             owl:ObjectProperty ;
@@ -1157,12 +1200,13 @@ base:TXT-APLICF_VERS---ESC
         rdfs:range    base:TYPE-REPO_ESC .
 
 base:TYPE-REPO_DFAC_PUB
-        a           owl:Class ;
-        rdfs:label  "REPO_DFAC_PUB"@en .
+        a             owl:Class ;
+        rdfs:comment  "Definicion Fachadas Publicas"@en ;
+        rdfs:label    "REPO_DFAC_PUB"@en .
 
 base:TXT-SUBSISTEMA--CAPA
         a             owl:ObjectProperty ;
-        rdfs:comment  "Subsistema -&gt"@en ;
+        rdfs:comment  "Subsistema ->Capa"@en ;
         rdfs:domain   base:TYPE-REPO_SISTEM ;
         rdfs:label    "Link Attribute SUBSISTEMA--CAPA"@en ;
         rdfs:range    base:TYPE-AR_CAPA .
@@ -1185,7 +1229,8 @@ base:TXT-PROY--CLIE_ENTOR
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR .
 
 base:TYPE-REPO_ENTOR  a  owl:Class ;
-        rdfs:label  "REPO_ENTOR"@en .
+        rdfs:comment  "Entorno"@en ;
+        rdfs:label    "REPO_ENTOR"@en .
 
 base:TXT-APLICF_VERS--ALP
         a             owl:ObjectProperty ;
@@ -1226,7 +1271,8 @@ base:TXT-ENVIADO_HOST
         rdfs:label    "Text Attribute ENVIADO_HOST"@en .
 
 base:TYPE-REPO_WSDL  a  owl:Class ;
-        rdfs:label  "REPO_WSDL"@en .
+        rdfs:comment  "WSDL"@en ;
+        rdfs:label    "REPO_WSDL"@en .
 
 base:TXT-PSFREAL  a   owl:DatatypeProperty ;
         rdfs:comment  "Created: 12/18/2008 16:33:26"@en ;
@@ -1283,8 +1329,9 @@ base:TXT-CONTEX--CB  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_CB .
 
 base:TYPE-REPO_ESTADO_OI
-        a           owl:Class ;
-        rdfs:label  "REPO_ESTADO_OI"@en .
+        a             owl:Class ;
+        rdfs:comment  "Estado_OI"@en ;
+        rdfs:label    "REPO_ESTADO_OI"@en .
 
 base:TXT-APLICF_VERS--APLICF_VERS_CORE
         a             owl:ObjectProperty ;
@@ -1294,8 +1341,9 @@ base:TXT-APLICF_VERS--APLICF_VERS_CORE
         rdfs:range    base:TYPE-REPO_APLICF_VERS .
 
 base:TYPE-REPO_ESTADO_SAT
-        a           owl:Class ;
-        rdfs:label  "REPO_ESTADO_SAT"@en .
+        a             owl:Class ;
+        rdfs:comment  "Estado SAT"@en ;
+        rdfs:label    "REPO_ESTADO_SAT"@en .
 
 base:TXT-CONCEP_MULTI---TDC
         a             owl:ObjectProperty ;
@@ -1311,7 +1359,8 @@ base:TXT-ENS---CLIE  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_CLIE .
 
 base:TYPE-REPO_OP  a  owl:Class ;
-        rdfs:label  "REPO_OP"@en .
+        rdfs:comment  "Operacion Presentación"@en ;
+        rdfs:label    "REPO_OP"@en .
 
 base:TXT-DESCRIPCION_2
         a             owl:DatatypeProperty ;
@@ -1375,13 +1424,14 @@ base:TXT-ESTADO_OI---DALP
 
 base:TXT-SUBSISTEMA--APLICACION_USA
         a             owl:ObjectProperty ;
-        rdfs:comment  "Subsitema -&gt"@en ;
+        rdfs:comment  "Subsitema ->Aplicacion (Usa)"@en ;
         rdfs:domain   base:TYPE-REPO_SISTEM ;
         rdfs:label    "Link Attribute SUBSISTEMA--APLICACION_USA"@en ;
         rdfs:range    base:TYPE-REPO_APLINF .
 
 base:TYPE-REPO_DENS  a  owl:Class ;
-        rdfs:label  "REPO_DENS"@en .
+        rdfs:comment  "Definicion Ensamblados"@en ;
+        rdfs:label    "REPO_DENS"@en .
 
 base:TYPE-REPO_TRX  a  owl:Class ;
         rdfs:label  "REPO_TRX"@en .
@@ -1429,8 +1479,9 @@ base:TXT-ENS---TIMESTAMP
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR_TIMEST .
 
 base:TYPE-REPO_CONCEP_MULTI
-        a           owl:Class ;
-        rdfs:label  "REPO_CONCEP_MULTI"@en .
+        a             owl:Class ;
+        rdfs:comment  "Concepto Multiidioma"@en ;
+        rdfs:label    "REPO_CONCEP_MULTI"@en .
 
 base:TXT-MODLN---COMP_ADAP
         a             owl:ObjectProperty ;
@@ -1567,7 +1618,8 @@ base:TXT-METH---OI  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_OI , base:TYPE-REPO_OPER .
 
 base:TYPE-REPO_EXCF  a  owl:Class ;
-        rdfs:label  "REPO_EXCF"@en .
+        rdfs:comment  "Excepciones Funcionales"@en ;
+        rdfs:label    "REPO_EXCF"@en .
 
 base:TXT-FACPRI--CLIE_ENTOR
         a             owl:ObjectProperty ;
@@ -1577,7 +1629,8 @@ base:TXT-FACPRI--CLIE_ENTOR
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR .
 
 base:TYPE-REPO_DPROY  a  owl:Class ;
-        rdfs:label  "REPO_DPROY"@en .
+        rdfs:comment  "Definicion Proyecto Fachada"@en ;
+        rdfs:label    "REPO_DPROY"@en .
 
 base:TXT-APLICACION--ULTIMA_VERSION
         a             owl:ObjectProperty ;
@@ -1587,7 +1640,8 @@ base:TXT-APLICACION--ULTIMA_VERSION
         rdfs:range    base:TYPE-AR_APLICACION_VERSION .
 
 base:TYPE-REPO_WEB  a  owl:Class ;
-        rdfs:label  "REPO_WEB"@en .
+        rdfs:comment  "Adaptador de Canal"@en ;
+        rdfs:label    "REPO_WEB"@en .
 
 base:TXT-MOD--CLIE  a  owl:ObjectProperty ;
         rdfs:comment  "Cliente"@en ;
@@ -1650,7 +1704,8 @@ base:TXT-MOD--TIMESTAMP
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR_TIMEST .
 
 base:TYPE-REPO_IFAC  a  owl:Class ;
-        rdfs:label  "REPO_IFAC"@en .
+        rdfs:comment  "Interfaz de Fachada"@en ;
+        rdfs:label    "REPO_IFAC"@en .
 
 base:TXT-OPER---DOPER
         a             owl:ObjectProperty ;
@@ -1696,7 +1751,8 @@ base:TXT-MODLN---FACPRI2
         rdfs:range    base:TYPE-REPO_FACPRI .
 
 base:TYPE-REPO_PARA  a  owl:Class ;
-        rdfs:label  "REPO_PARA"@en .
+        rdfs:comment  "Parametros"@en ;
+        rdfs:label    "REPO_PARA"@en .
 
 base:TXT-APLICF_VERS--CLIE
         a             owl:ObjectProperty ;
@@ -1718,8 +1774,9 @@ base:TXT-ESC---CTX  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_CTX .
 
 base:TYPE-REPO_SISTEM
-        a           owl:Class ;
-        rdfs:label  "REPO_SISTEM"@en .
+        a             owl:Class ;
+        rdfs:comment  "SubSistema"@en ;
+        rdfs:label    "REPO_SISTEM"@en .
 
 base:TXT-COMP_ADAP--LOC
         a             owl:ObjectProperty ;
@@ -1763,8 +1820,14 @@ base:TXT-TIMESTAMP---CLIE_ENTOR
         rdfs:label    "Link Attribute TIMESTAMP---CLIE_ENTOR"@en ;
         rdfs:range    base:TYPE-REPO_CLIE_ENTOR .
 
+<http://es.upm.atlas/atlas_ontology/﻿TYPE-REPO_ACTIVO>
+        a             owl:Class ;
+        rdfs:comment  "Activo"@en ;
+        rdfs:label    "REPO_ACTIVO"@en .
+
 base:TYPE-REPO_DOPER  a  owl:Class ;
-        rdfs:label  "REPO_DOPER"@en .
+        rdfs:comment  "Definicion Operacion"@en ;
+        rdfs:label    "REPO_DOPER"@en .
 
 base:TXT-TDC---TIPDML
         a             owl:ObjectProperty ;
@@ -1774,8 +1837,9 @@ base:TXT-TDC---TIPDML
         rdfs:range    base:TYPE-REPO_TIPDML .
 
 base:TYPE-REPO_DFAC_PRI
-        a           owl:Class ;
-        rdfs:label  "REPO_DFAC_PRI"@en .
+        a             owl:Class ;
+        rdfs:comment  "Definicion Fachadas Privadas"@en ;
+        rdfs:label    "REPO_DFAC_PRI"@en .
 
 base:TXT-OPER---ESTADO_SAT
         a             owl:ObjectProperty ;
@@ -1815,7 +1879,8 @@ base:TXT-DENS---ENS  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_ENS .
 
 base:TYPE-REPO_ESC  a  owl:Class ;
-        rdfs:label  "REPO_ESC"@en .
+        rdfs:comment  "Escenario"@en ;
+        rdfs:label    "REPO_ESC"@en .
 
 base:TXT-MODLN---FACPUB2
         a             owl:ObjectProperty ;
@@ -1843,8 +1908,9 @@ base:TXT-ALP--CLIE  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_CLIE .
 
 base:TYPE-REPO_ESTADO_OP
-        a           owl:Class ;
-        rdfs:label  "REPO_ESTADO_OP"@en .
+        a             owl:Class ;
+        rdfs:comment  "Estado_OP"@en ;
+        rdfs:label    "REPO_ESTADO_OP"@en .
 
 base:TXT-DESCRIPCION_TRADUCIDA_4
         a             owl:DatatypeProperty ;
@@ -1852,7 +1918,8 @@ base:TXT-DESCRIPCION_TRADUCIDA_4
         rdfs:label    "Text Attribute DESCRIPCION_TRADUCIDA_4"@en .
 
 base:TYPE-REPO_TIPD  a  owl:Class ;
-        rdfs:label  "REPO_TIPD"@en .
+        rdfs:comment  "Tipo de Dato"@en ;
+        rdfs:label    "REPO_TIPD"@en .
 
 <http://es.upm.atlas/atlas_ontology#>
         a       owl:Ontology .
@@ -1875,16 +1942,19 @@ base:TXT-ID  a        owl:DatatypeProperty ;
         rdfs:label    "Text Attribute ID"@en .
 
 base:TYPE-REPO_PROTOCOLO
-        a           owl:Class ;
-        rdfs:label  "REPO_PROTOCOLO"@en .
+        a             owl:Class ;
+        rdfs:comment  "Protocolo"@en ;
+        rdfs:label    "REPO_PROTOCOLO"@en .
 
 base:TYPE-REPO_USUARIO
-        a           owl:Class ;
-        rdfs:label  "REPO_USUARIO"@en .
+        a             owl:Class ;
+        rdfs:comment  "Usuario"@en ;
+        rdfs:label    "REPO_USUARIO"@en .
 
 base:TYPE-REPO_METHCOMP
-        a           owl:Class ;
-        rdfs:label  "REPO_METHCOMP"@en .
+        a             owl:Class ;
+        rdfs:comment  "Metodo de Componente"@en ;
+        rdfs:label    "REPO_METHCOMP"@en .
 
 base:TYPE-H_REPO_CLIE_LIN
         a           owl:Class ;
@@ -1944,7 +2014,8 @@ base:TXT-APLICF---USUGEST
         rdfs:range    base:TYPE-REPO_USUARIO .
 
 base:TYPE-REPO_DWEB  a  owl:Class ;
-        rdfs:label  "REPO_DWEB"@en .
+        rdfs:comment  "Definicion Adaptador WEB"@en ;
+        rdfs:label    "REPO_DWEB"@en .
 
 base:TXT-ESTADO_SAT--DMSJ
         a             owl:ObjectProperty ;
@@ -1954,7 +2025,7 @@ base:TXT-ESTADO_SAT--DMSJ
         rdfs:range    base:TYPE-H_REPO_DMSJ .
 
 base:TXT-DEFINITION  a  owl:DatatypeProperty ;
-        rdfs:comment  "The definition text attribute consists of one line and <BR/> contains in short form the specification/function of the <BR/> item. DEFINITION could also be designated as long name. <BR/> By default, the item definition text is shown in all the <BR/> selections. In this overview, it should allow an  <BR/> identification of the item. <BR/>   <BR/> The text attribute DEFINITION is present in each active <BR/> item. If this attribute is not created by the user, and  <BR/> there is no initial text defined (attribute AP-INIT), it <BR/> is generated automatically by Rochade: <BR/>   <BR/> \"CREATED &lt"@en ;
+        rdfs:comment  "The definition text attribute consists of one line and <BR/> contains in short form the specification/function of the <BR/> item. DEFINITION could also be designated as long name. <BR/> By default, the item definition text is shown in all the <BR/> selections. In this overview, it should allow an  <BR/> identification of the item. <BR/>   <BR/> The text attribute DEFINITION is present in each active <BR/> item. If this attribute is not created by the user, and  <BR/> there is no initial text defined (attribute AP-INIT), it <BR/> is generated automatically by Rochade: <BR/>   <BR/> \"CREATED <date><time><user>\" <BR/>   <BR/> <h4>Help-Text:</h4> <p><pre>Please enter the one-line designation of the item.  It can be shown in selection lists and supports the  identification (what is contained in the item?). <h4>Init-Text:</h4> <p><pre>Automatically generated </pre></p> <h4>Interfaces:</h4> <br>"@en ;
         rdfs:domain   base:TYPE-REPO_METHCOMP , base:TYPE-REPO_CLIE_FECHA_ENV , base:TYPE-REPO_FACPRI , base:TYPE-REPO_DWEB , base:TYPE-REPO_TRXO , base:TYPE-AP-ITEMTYPE , base:TYPE-REPO_ALN , base:TYPE-REPO_MOD2 , base:TYPE-REPO_ESTADO_OI , base:TYPE-REPO_COMP_ADAP , base:TYPE-REPO_ESTADO_SAT , base:TYPE-REPO_EXCF , base:TYPE-REPO_ESTADO_OP , base:TYPE-REPO_MOD , base:TYPE-REPO_ALIAS , base:TYPE-REPO_TIPDMF , base:TYPE-REPO_CONTEX , base:TYPE-REPO_COMP_SQL , base:TYPE-REPO_DIFAC , base:TYPE-REPO_DOPER , base:TYPE-REPO_DCOMP_SQL , base:TYPE-REPO_COMP_JAVA , base:TYPE-REPO_APL2 , base:TYPE-REPO_TIPDML , base:TYPE-REPO_ENTOR , base:TYPE-REPO_TRANS , base:TYPE-REPO_CLIE_ENTOR_TIMEST , base:TYPE-REPO_ENS , base:TYPE-REPO_CLIE_ENTOR , base:TYPE-REPO_TIPD , base:TYPE-REPO_IFAC , base:TYPE-REPO_SISTEM , base:TYPE-REPO_FACPUB , base:TYPE-REPO_ACTIVO , base:TYPE-REPO_ESC , base:TYPE-REPO_CLIE , base:TYPE-REPO_DPROY , base:TYPE-REPO_COMPOS , base:TYPE-REPO_DCOMP_ADAP , base:TYPE-REPO_APLINF , base:TYPE-REPO_DMLP , base:TYPE-REPO_DFAC_PRI , base:TYPE-REPO_PREENS , base:TYPE-REPO_DENS , base:TYPE-REPO_DALP , base:TYPE-REPO_TIPDL , base:TYPE-REPO_DFAC_PUB , base:TYPE-REPO_APLICF_VERS , base:TYPE-REPO_APLICF_FECHA , base:TYPE-REPO_CB , base:TYPE-REPO_WSDL , base:TYPE-REPO_OI , base:TYPE-REPO_WEB , base:TYPE-REPO_ESTADO_TRXO , base:TYPE-REPO_METHIFAC , base:TYPE-REPO_DCOMP_JAVA , base:TYPE-REPO_PARA , base:TYPE-REPO_CONCEP_MULTI , base:TYPE-REPO_PROTOCOLO , base:TYPE-REPO_PROY , base:TYPE-REPO_OP , base:TYPE-REPO_DESC , base:TYPE-REPO_TDC , base:TYPE-REPO_DMLN , base:TYPE-REPO_USUARIO , base:TYPE-REPO_ESTADO_WEB , base:TYPE-REPO_WEB_METH , base:TYPE-REPO_DALN , base:TYPE-REPO_DAPL2 , base:TYPE-REPO_DEFAPL , base:TYPE-REPO_APLICF , base:TYPE-REPO_ALP , base:TYPE-REPO_SQL , base:TYPE-REPO_AREA ;
         rdfs:label    "Item definition"@en .
 
@@ -1964,7 +2035,8 @@ base:TXT-INDISI1  a   owl:DatatypeProperty ;
         rdfs:label    "Text Attribute INDISI1"@en .
 
 base:TYPE-REPO_ALN  a  owl:Class ;
-        rdfs:label  "REPO_ALN"@en .
+        rdfs:comment  "Aplicacion BKS LN"@en ;
+        rdfs:label    "REPO_ALN"@en .
 
 base:TXT-ENS---ENS_METH
         a             owl:ObjectProperty ;
@@ -1975,7 +2047,7 @@ base:TXT-ENS---ENS_METH
 
 base:TXT-SERVICIO--OPERACION
         a             owl:ObjectProperty ;
-        rdfs:comment  "Servicion funcional -&gt"@en ;
+        rdfs:comment  "Servicion funcional ->Operación funcional"@en ;
         rdfs:domain   base:TYPE-REPO_DEFAPL ;
         rdfs:label    "Link Attribute SERVICIO--OPERACION"@en ;
         rdfs:range    base:TYPE-AR_OPERACION .
@@ -1986,7 +2058,8 @@ base:TXT-DETALLE  a   owl:DatatypeProperty ;
         rdfs:label    "Text Attribute DETALLE"@en .
 
 base:TYPE-REPO_DAPL2  a  owl:Class ;
-        rdfs:label  "REPO_DAPL2"@en .
+        rdfs:comment  "Definicion Aplicacion BKS 2"@en ;
+        rdfs:label    "REPO_DAPL2"@en .
 
 base:TXT-NOMLI1  a    owl:DatatypeProperty ;
         rdfs:comment  "Created: 12/11/2008 14:01:54"@en ;
@@ -2011,8 +2084,9 @@ base:TXT-INFTEXT  a   owl:DatatypeProperty ;
         rdfs:label    "Text Attribute INFTEXT"@en .
 
 base:TYPE-REPO_COMPOS
-        a           owl:Class ;
-        rdfs:label  "REPO_COMPOS"@en .
+        a             owl:Class ;
+        rdfs:comment  "Composicion"@en ;
+        rdfs:label    "REPO_COMPOS"@en .
 
 base:TXT-TIMESTAMP--CLIE_LIN_ENTOR
         a             owl:ObjectProperty ;
@@ -2033,7 +2107,8 @@ base:TYPE-H_REPO_CLIE_LIN_ENTOR
         rdfs:label  "H_REPO_CLIE_LIN_ENTOR"@en .
 
 base:TYPE-REPO_PROY  a  owl:Class ;
-        rdfs:label  "REPO_PROY"@en .
+        rdfs:comment  "Proyecto"@en ;
+        rdfs:label    "REPO_PROY"@en .
 
 base:TXT-ALN--ENTOR  a  owl:ObjectProperty ;
         rdfs:comment  "Entorno"@en ;
@@ -2048,7 +2123,7 @@ base:TXT-CONCEPBL  a  owl:DatatypeProperty ;
 
 base:TXT-SUBSISTEMA--APLICACION_TOD
         a             owl:ObjectProperty ;
-        rdfs:comment  "Susbsistema -&gt"@en ;
+        rdfs:comment  "Susbsistema ->Aplicación"@en ;
         rdfs:domain   base:TYPE-REPO_SISTEM ;
         rdfs:label    "Link Attribute SUBSISTEMA--APLICACION_TOD"@en ;
         rdfs:range    base:TYPE-REPO_APLINF .
@@ -2095,7 +2170,8 @@ base:TXT-ENS---MOD2  a  owl:ObjectProperty ;
         rdfs:range    base:TYPE-REPO_MOD2 .
 
 base:TYPE-REPO_CLIE  a  owl:Class ;
-        rdfs:label  "REPO_CLIE"@en .
+        rdfs:comment  "Cliente"@en ;
+        rdfs:label    "REPO_CLIE"@en .
 
 base:TXT-TRANS--ACTIVO
         a             owl:ObjectProperty ;
@@ -2124,7 +2200,8 @@ base:TXT-DFAC_PUB---FACPUB
         rdfs:range    base:TYPE-REPO_FACPUB .
 
 base:TYPE-REPO_MOD  a  owl:Class ;
-        rdfs:label  "REPO_MOD"@en .
+        rdfs:comment  "Modulos LN"@en ;
+        rdfs:label    "REPO_MOD"@en .
 
 base:TXT-TRXO  a      owl:DatatypeProperty ;
         rdfs:comment  "Created: 07/11/2008 13:25:39"@en ;

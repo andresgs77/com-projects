@@ -21,6 +21,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Properties;
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.log4j.Logger;
 
 /**
@@ -69,6 +70,7 @@ public class OntologyConverter {
               i++;
               //if (i<97) continue;
               //System.out.println(i+"- "+line);
+              line= StringEscapeUtils.unescapeHtml4(line);
               entityProperty = new EntityProperty();                
               //get the property id
               entityProperty.setId(line.substring(0,line.indexOf(";")));
@@ -197,11 +199,12 @@ public class OntologyConverter {
             
         }    
         
+        readClasses();
         for (EntityClass entityClass:entityClasses){
             OntClass ontClass=model.getOntClass(baseUri+entityClass.getId());
             if (ontClass==null){ 
                 ontClass=model.createClass(baseUri+entityClass.getId());
-                ontClass.addLabel(entityClass.getLabel(),"en");
+                ontClass.addLabel(entityClass.getLabel(),"en");                
             }
             ontClass.addComment(entityClass.getDescription(),"en");
         }               
@@ -213,6 +216,8 @@ public class OntologyConverter {
 //            i++;
 //            OntClass myOntClass=(OntClass)ontClassToPrint.next();
 //            System.out.println(myOntClass);
+//            System.out.println(myOntClass.getLabel("en"));
+//            System.out.println(myOntClass.getComment("en"));
 //        }
 //        System.out.println("total de clases:"+i);
         
